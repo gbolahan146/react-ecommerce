@@ -1,0 +1,27 @@
+{
+  "name": "react-ecommerce",
+  "version": "1.0.0",
+  "description": "A React based e-commerce web-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caleb335/react-ecommerce.git"
+  },
+  "keywords": [
+    "e-commerce",
+    "reactjs"
+  ],
+  "author": "team-react-b",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Caleb335/react-ecommerce/issues"
+  },
+  "homepage": "https://github.com/Caleb335/react-ecommerce#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
