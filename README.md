@@ -34,6 +34,8 @@ A React based e-commerce web-app
 
 ## Development
 
+- Run ```npm install``` in your terminal to get all the dependencies of the project.
+
 - To see this app locally on your machine run this in your terminal
 ```npm 
     npm start
