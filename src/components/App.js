@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div className="app__base">
       <LandingPage />
-      {/* <Productpage Images={Images}/> */}
+      <Productpage Images={Images}/>
     </div>
   );
 }
