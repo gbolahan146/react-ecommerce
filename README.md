@@ -7,9 +7,9 @@ A React based e-commerce web-app
 
 * The folder we'd be working on, is the ```src``` folder. There are two subfolders in it. ```components``` and ```scss```
 
-- Fork and clone this repository onto your machine.
+- Fork and clone this repository [the forked version] onto your machine.
 ```git 
-    git clone https://github.com/Caleb335/react-ecommerce.git
+    git clone https://github.com/your-username/react-ecommerce.git
 ``` 
 - Make this repository the upstream, so when there is any change you can pull from this reposiory to get the current state of the app.
 ```git 
