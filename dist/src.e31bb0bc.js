@@ -30823,7 +30823,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function App() {
   return _react.default.createElement("div", {
     className: "app__base"
-  }, _react.default.createElement(_LandingPage.default, null));
+  }, _react.default.createElement(_LandingPage.default, null), _react.default.createElement(_Product_page.default, {
+    Images: _Images.default
+  }));
 }
 },{"react":"../node_modules/react/index.js","./Product_page":"components/Product_page.js","./Landing-page":"components/Landing-page.js","./Images":"components/Images.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
@@ -30939,7 +30941,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38675" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50003" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
