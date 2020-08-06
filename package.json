@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.html --open",
     "format": "prettier --write \"src/**/*.{js,jsx,scss,css,html}\"",
-    "build": "parcel src/index.html"
+    "build": "parcel src/index.html",
+    "format:check": "prettier --list-different \"src/**/*.{js,jsx,scss,css,html}\""
   },
   "repository": {
     "type": "git",
