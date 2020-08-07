@@ -1,14 +1,63 @@
-// all general styles goes here 
+// all general styles goes here
+@import './variables';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-.app__base h1 {
-  text-align: center;
-  margin-top: 15px;
+  font-family: 'Open Sans', sans-serif;
 }
 
-// .product_page {
-//   background-color: yellow;
-// }
+.app__base {
+  min-height: 100vh;
+}
+
+// header section starts here
+header {
+  display: flex;
+  justify-content: space-around;
+  height: 600px;
+  width: 100%;
+  background: $bg-primary;
+  color: $text-col;
+  padding-top: 15px;
+
+  & a {
+    text-decoration: none;
+    color: $text-col;
+  }
+}
+
+.brand a {
+  font-size: 20px;
+  font-weight: bold;
+  color: $text-col;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-left: 26px;
+
+  &:hover {
+    text-decoration: underline;
+    transition: all 0.8s ease;
+  }
+}
+
+.fa-cart-arrow-down {
+  font-size: 20px;
+}
+
+
+
+// footer section starts here
+footer {
+  height: 50px;
+  background: $bg-primary;
+  color: $text-col;
+}

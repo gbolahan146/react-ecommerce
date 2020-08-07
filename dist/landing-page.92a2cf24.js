@@ -119,11 +119,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"js/landing-page.js":[function(require,module,exports) {
 // Get the modal
-var modal = document.getElementById("myModal"); // Get the image and insert it inside the modal - use its "alt" text as a caption
+var modal = document.getElementById('myModal'); // Get the image and insert it inside the modal - use its "alt" text as a caption
 
-var images = document.getElementsByClassName("featured-cake");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
+var images = document.getElementsByClassName('featured-cake');
+var modalImg = document.getElementById('img01');
+var captionText = document.getElementById('caption');
 var imgs = Array.from(images);
 imgs.map(function (img) {
   return img.onclick = function () {
@@ -133,10 +133,10 @@ imgs.map(function (img) {
   };
 }); // Get the <span> element that closes the modal
 
-var span = document.getElementsByClassName("close")[0]; // When the user clicks on <span> (x), close the modal
+var span = document.getElementsByClassName('close')[0]; // When the user clicks on <span> (x), close the modal
 
 span.onclick = function () {
-  modal.style.display = "none";
+  modal.style.display = 'none';
 };
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -166,7 +166,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33437" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46051" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,13 +1,47 @@
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Pathway+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif; }
 
-.app__base h1 {
-  text-align: center;
-  margin-top: 15px; }
+.app__base {
+  min-height: 100vh; }
+
+header {
+  display: flex;
+  justify-content: space-around;
+  height: 600px;
+  width: 100%;
+  background: #b3e4f9;
+  color: #000;
+  padding-top: 15px; }
+  header a {
+    text-decoration: none;
+    color: #000; }
+
+.brand a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000; }
+
+nav ul {
+  display: flex;
+  list-style-type: none; }
+
+nav ul li {
+  margin-left: 26px; }
+  nav ul li:hover {
+    text-decoration: underline;
+    transition: all 0.8s ease; }
+
+.fa-cart-arrow-down {
+  font-size: 20px; }
+
+footer {
+  height: 50px;
+  background: #b3e4f9;
+  color: #000; }
 
 .product_page {
   padding: 2em; }
@@ -22,11 +56,11 @@
     margin-left: 10em; }
 
 input {
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
   margin-top: 1rem;
   border-radius: 9999px;
   border: none;
-  padding: .8rem;
+  padding: 0.8rem;
   width: 18rem; }
 
 img {
@@ -46,41 +80,6 @@ img {
     display: flex; }
     .image-gallery birthday {
       justify-content: space-between; } }
-
-header {
-  background-image: url("/other.63615aa2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-header nav h1 {
-  font-family: 'Courgette', cursive; }
-
-header h1 {
-  font-family: cursive; }
-
-header nav {
-  padding: 20px; }
-
-header ul li {
-  display: inline-block;
-  margin-right: 20px;
-  color: white; }
-
-header .cart {
-  font-size: 20px; }
-
-.header-content {
-  margin-top: 120px;
-  color: #888888;
-  padding: 15px; }
-
-.header-content p {
-  line-height: 1.9rem;
-  margin-top: 20px;
-  margin-left: 50px;
-  margin-right: 60px;
-  font-family: 'Courgette', cursive; }
 
 /*=====LANDING PAGE(contact section)========*/
 .contact-section {
@@ -103,7 +102,9 @@ header .cart {
   font-family: 'Pathway Gothic One', sans-serif;
   color: #3b3a3a; }
 
-input, textarea, button {
+input,
+textarea,
+button {
   margin-top: 10px;
   border: 1px solid #3b3b3b;
   padding: 5px;
@@ -185,7 +186,8 @@ input, textarea, button {
   max-width: 700px;
   height: inherit; }
 
-.modal-content, #caption {
+.modal-content,
+#caption {
   animation-name: zoom;
   animation-duration: 0.6s; }
 
@@ -210,39 +212,13 @@ input, textarea, button {
   text-decoration: none;
   cursor: pointer; }
 
+.landing-body {
+  height: 100%; }
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%; } }
-
-/*===========Landing Page(footer section)=============*/
-footer {
-  padding: 0px 0px 80px 0px;
-  font-family: 'Pathway Gothic One', sans-serif;
-  background-image: url("/background.dce29d47.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-footer h1 {
-  font-family: 'Courgette', cursive;
-  text-align: center;
-  margin-bottom: 60px;
-  padding-top: 25px; }
-
-footer ul {
-  margin-left: 150px; }
-
-footer li {
-  display: inline-block;
-  margin-right: 30px;
-  margin-left: 20px; }
-
-.footer-links {
-  display: flex; }
-
-footer .social-media {
-  margin: auto; }
 
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
