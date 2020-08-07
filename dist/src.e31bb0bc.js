@@ -28411,7 +28411,9 @@ function ProductPage(_ref) {
 //         }}/>
 //   ))
 // }
-},{"react":"../node_modules/react/index.js","./../../assets/img/cakes/birthday/birthday.jpg":"../assets/img/cakes/birthday/birthday.jpg","./../../assets/img/cakes/birthday/birthday1.jpg":"../assets/img/cakes/birthday/birthday1.jpg","./../../assets/img/cakes/birthday/birthday2.jpg":"../assets/img/cakes/birthday/birthday2.jpg","./../../assets/img/cakes/birthday/birthday3.jpg":"../assets/img/cakes/birthday/birthday3.jpg","./../../assets/img/cakes/birthday/birthday4.jpg":"../assets/img/cakes/birthday/birthday4.jpg","./../../assets/img/cakes/birthday/birthday5.jpg":"../assets/img/cakes/birthday/birthday5.jpg","./../../assets/img/cakes/cup/cup.jpg":"../assets/img/cakes/cup/cup.jpg","./../../assets/img/cakes/cup/cup1.jpg":"../assets/img/cakes/cup/cup1.jpg","./../../assets/img/cakes/cup/cup2.jpg":"../assets/img/cakes/cup/cup2.jpg","./../../assets/img/cakes/cup/cup3.jpg":"../assets/img/cakes/cup/cup3.jpg","./../../assets/img/cakes/cup/cup4.jpg":"../assets/img/cakes/cup/cup4.jpg"}],"components/Header.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./../../assets/img/cakes/birthday/birthday.jpg":"../assets/img/cakes/birthday/birthday.jpg","./../../assets/img/cakes/birthday/birthday1.jpg":"../assets/img/cakes/birthday/birthday1.jpg","./../../assets/img/cakes/birthday/birthday2.jpg":"../assets/img/cakes/birthday/birthday2.jpg","./../../assets/img/cakes/birthday/birthday3.jpg":"../assets/img/cakes/birthday/birthday3.jpg","./../../assets/img/cakes/birthday/birthday4.jpg":"../assets/img/cakes/birthday/birthday4.jpg","./../../assets/img/cakes/birthday/birthday5.jpg":"../assets/img/cakes/birthday/birthday5.jpg","./../../assets/img/cakes/cup/cup.jpg":"../assets/img/cakes/cup/cup.jpg","./../../assets/img/cakes/cup/cup1.jpg":"../assets/img/cakes/cup/cup1.jpg","./../../assets/img/cakes/cup/cup2.jpg":"../assets/img/cakes/cup/cup2.jpg","./../../assets/img/cakes/cup/cup3.jpg":"../assets/img/cakes/cup/cup3.jpg","./../../assets/img/cakes/cup/cup4.jpg":"../assets/img/cakes/cup/cup4.jpg"}],"../assets/img/flat-cake.jpg":[function(require,module,exports) {
+module.exports = "/flat-cake.5edfd24e.jpg";
+},{}],"components/Header.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28421,10 +28423,14 @@ exports.default = Header;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _flatCake = _interopRequireDefault(require("../../assets/img/flat-cake.jpg"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Header() {
-  return _react.default.createElement("header", null, _react.default.createElement("div", {
+  return _react.default.createElement("div", {
+    className: "header__base"
+  }, _react.default.createElement("header", null, _react.default.createElement("div", {
     className: "brand"
   }, _react.default.createElement("a", {
     href: ""
@@ -28452,9 +28458,23 @@ function Header() {
     href: "#"
   }, "Cart ", _react.default.createElement("i", {
     "class": "fa fa-cart-arrow-down"
-  }))))));
+  })))))), _react.default.createElement("div", {
+    className: "header-intro"
+  }, _react.default.createElement("div", {
+    className: "text-cta"
+  }, _react.default.createElement("h2", {
+    className: "text-intro"
+  }, "Find out the sweet story behind our Mastery."), _react.default.createElement("p", {
+    className: "more-intro"
+  }, "Everything we offer is made right here, from cookies to pasteries to cakes. Name them, we've got you covered.")), _react.default.createElement("div", {
+    className: "image-cta"
+  }, _react.default.createElement("img", {
+    src: _flatCake.default,
+    className: "img-intro",
+    alt: "an image showing a very flat cake"
+  }))));
 }
-},{"react":"../node_modules/react/index.js"}],"components/Footer.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../../assets/img/flat-cake.jpg":"../assets/img/flat-cake.jpg"}],"components/Footer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28471,15 +28491,7 @@ function Footer() {
     className: "footer"
   }, _react.default.createElement("footer", null, _react.default.createElement("h3", null, "Footer")));
 }
-},{"react":"../node_modules/react/index.js"}],"../assets/img/cakes/other/flat-cake.jpg":[function(require,module,exports) {
-module.exports = "/e4036884832d0ff45e674b0c6c7deb76.jpg";
-},{}],"../assets/img/cakes/wedding/wedding1.jpg":[function(require,module,exports) {
-module.exports = "/wedding1.fff99756.jpg";
-},{}],"../assets/img/cakes/wedding/wedding2.jpg":[function(require,module,exports) {
-module.exports = "/wedding2.c0313442.jpg";
-},{}],"../assets/img/cakes/wedding/wedding3.jpg":[function(require,module,exports) {
-module.exports = "/wedding3.7edeedab.jpg";
-},{}],"components/Landing-page.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js"}],"components/Landing-page.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28493,31 +28505,8 @@ var _Header = _interopRequireDefault(require("./Header"));
 
 var _Footer = _interopRequireDefault(require("./Footer"));
 
-var _flatCake = _interopRequireDefault(require("../../assets/img/cakes/other/flat-cake.jpg"));
-
-var _wedding = _interopRequireDefault(require("../../assets/img/cakes/wedding/wedding1.jpg"));
-
-var _wedding2 = _interopRequireDefault(require("../../assets/img/cakes/wedding/wedding2.jpg"));
-
-var _wedding3 = _interopRequireDefault(require("../../assets/img/cakes/wedding/wedding3.jpg"));
-
-var _birthday = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday2.jpg"));
-
-var _birthday2 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday3.jpg"));
-
-var _birthday3 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday5.jpg"));
-
-var _cup = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup1.jpg"));
-
-var _cup2 = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup2.jpg"));
-
-var _cup3 = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup3.jpg"));
-
-var _cup4 = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup4.jpg"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// Import cake images
 function Landing() {
   return _react.default.createElement("div", {
     className: "landing"
@@ -28525,7 +28514,7 @@ function Landing() {
     className: "landing-body"
   }, _react.default.createElement("h3", null, "Body")), _react.default.createElement(_Footer.default, null));
 }
-},{"react":"../node_modules/react/index.js","./Header":"components/Header.js","./Footer":"components/Footer.js","../../assets/img/cakes/other/flat-cake.jpg":"../assets/img/cakes/other/flat-cake.jpg","../../assets/img/cakes/wedding/wedding1.jpg":"../assets/img/cakes/wedding/wedding1.jpg","../../assets/img/cakes/wedding/wedding2.jpg":"../assets/img/cakes/wedding/wedding2.jpg","../../assets/img/cakes/wedding/wedding3.jpg":"../assets/img/cakes/wedding/wedding3.jpg","./../../assets/img/cakes/birthday/birthday2.jpg":"../assets/img/cakes/birthday/birthday2.jpg","./../../assets/img/cakes/birthday/birthday3.jpg":"../assets/img/cakes/birthday/birthday3.jpg","./../../assets/img/cakes/birthday/birthday5.jpg":"../assets/img/cakes/birthday/birthday5.jpg","./../../assets/img/cakes/cup/cup1.jpg":"../assets/img/cakes/cup/cup1.jpg","./../../assets/img/cakes/cup/cup2.jpg":"../assets/img/cakes/cup/cup2.jpg","./../../assets/img/cakes/cup/cup3.jpg":"../assets/img/cakes/cup/cup3.jpg","./../../assets/img/cakes/cup/cup4.jpg":"../assets/img/cakes/cup/cup4.jpg"}],"components/Images.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Header":"components/Header.js","./Footer":"components/Footer.js"}],"components/Images.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28572,16 +28561,16 @@ var Images = [[{
   src: './../../assets/img/cakes/cup/cup4.jpg'
 }], [{
   id: 1,
-  src: './../../assets/img/cakes/other/other.jpg'
+  src: './../../assets/img/other.jpg'
 }, {
   id: 2,
-  src: './../../assets/img/cakes/other/other2.jpg'
+  src: './../../assets/img/other2.jpg'
 }, {
   id: 3,
-  src: './../../assets/img/cakes/other/other3.jpg'
+  src: './../../assets/img/other3.jpg'
 }, {
   id: 4,
-  src: './../../assets/img/cakes/other/other4.jpg'
+  src: './../../assets/img/flat-cake.jpg'
 }], [{
   id: 1,
   src: './../../assets/img/cakes/wedding/wedding.jpg'
@@ -28698,7 +28687,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../../assets/img/cakes/other/other4.jpg":[["other4.6b866864.jpg","../assets/img/cakes/other/other4.jpg"],"../assets/img/cakes/other/other4.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/symbol-observable/es/ponyfill.js":[function(require,module,exports) {
+},{"./../../assets/img/flat-cake.jpg":[["flat-cake.5edfd24e.jpg","../assets/img/flat-cake.jpg"],"../assets/img/flat-cake.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/symbol-observable/es/ponyfill.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32211,7 +32200,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46051" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39773" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

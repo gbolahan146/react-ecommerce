@@ -14,12 +14,17 @@
 }
 
 // header section starts here
+.header__base {
+  height: 680px;
+  background: $bg-primary;
+}
+
 header {
   display: flex;
   justify-content: space-around;
-  height: 600px;
+  height: 50px;
   width: 100%;
-  background: $bg-primary;
+  background: $bg-col;
   color: $text-col;
   padding-top: 15px;
 
@@ -40,12 +45,13 @@ nav ul {
   list-style-type: none;
 }
 
-nav ul li {
+nav ul li a {
   margin-left: 26px;
 
   &:hover {
     text-decoration: underline;
-    transition: all 0.8s ease;
+    transition: all 0.5s ease;
+    color: $pinkish;
   }
 }
 
@@ -53,7 +59,42 @@ nav ul li {
   font-size: 20px;
 }
 
+.header-intro {
+  display: flex;
+  justify-content: space-around;
+}
 
+.text-cta {
+  width: 550px;
+  height: 260px;
+  margin-top: 12%;
+  
+  & h2 {
+    font-size: 39px;
+    }
+
+    & p {
+      font-size: 18px;
+      margin-top: 3%;
+    }
+}
+
+.img-intro {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+.image-cta {
+  height: 580px;
+  width: 580px;
+  border: 3px solid $pinkish;
+  border-radius: 50%;
+  padding: 35px;
+  margin-top: 2%;
+}
+
+// header section ends here
 
 // footer section starts here
 footer {
