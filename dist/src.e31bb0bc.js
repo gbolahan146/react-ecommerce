@@ -31658,6 +31658,8 @@ exports.default = void 0;
 
 var _userActionTypes = require("./userActionTypes");
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var initialState = {
   currentUser: null
 };
@@ -31668,10 +31670,9 @@ var userReducer = function userReducer() {
 
   switch (action.type) {
     case _userActionTypes.userActionTypes.CURRENT_USER:
-      return {
-        state: state,
+      return _extends({}, state, {
         CURRENT_USER: action.payload
-      };
+      });
 
     default:
       return state;
@@ -34364,7 +34365,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41063" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33437" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

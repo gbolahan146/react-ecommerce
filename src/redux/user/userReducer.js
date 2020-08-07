@@ -8,7 +8,7 @@ const userReducer = (state = initialState, action) => {
     switch (action.type) {
         case userActionTypes.CURRENT_USER:
             return {
-                state,
+                ...state,
                 CURRENT_USER: action.payload
             }
         default:
