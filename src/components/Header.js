@@ -1,6 +1,5 @@
 import React from 'react';
 
-import flat from '../../assets/img/cakes/other/flat-cake.jpg'
 
 export default function Header() {
   return (
