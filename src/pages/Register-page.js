@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {Link } from 'react-router-dom';
+
 
 class Register extends Component {
     render() {
@@ -12,7 +14,7 @@ class Register extends Component {
             <div className="Register-form-lyt">
                 <div className="Register-form">
                     <h3 className="Register-heading">Create an account with us</h3>
-                    <h5 className="Register-subtext">Already registered? <span>Sign in</span></h5>
+                    <h5 className="Register-subtext">Already registered? <span><Link to='/signin'> Sign in!</Link></span></h5>
                     <form className="Reg-form Reg-form-h">
                         <div className="flex flex-btw">
                             <label>
