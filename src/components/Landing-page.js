@@ -22,7 +22,7 @@ import other1 from '../../assets/img/other1.jpg'
 export default function Landing() {
   return (
     <div className="landing">
-      {/* <Header />  */}
+      <Header /> 
       {/* landing body */}
       <div className="landing-body">
         <div className="call-to-action">
@@ -40,6 +40,7 @@ export default function Landing() {
               <figcaption>
                 <p className="name">Raspberry cake</p>
                 <p className="price">$980</p>
+                <button>Place your order</button>
               </figcaption>
             </figure>
             <figure>
@@ -47,6 +48,7 @@ export default function Landing() {
               <figcaption>
                 <p className="name">Strawberry</p>
                 <p className="price">$560</p>
+                <button>Place your order</button>
               </figcaption>
             </figure>
             <figure>
@@ -54,6 +56,7 @@ export default function Landing() {
               <figcaption>
                 <p className="name">Cookie cake</p>
                 <p className="price">$899</p>
+                <button>Place your order</button>
               </figcaption>
             </figure>
             <figure>
@@ -61,6 +64,7 @@ export default function Landing() {
               <figcaption>
                 <p className="name">Choco creme</p>
                 <p className="price">$700</p>
+                <button>Place your order</button>
               </figcaption>
             </figure>
             <figure>
@@ -68,6 +72,7 @@ export default function Landing() {
               <figcaption>
                 <p className="name">Lemon cupcake</p>
                 <p className="price">$50</p>
+                <button>Place your order</button>
               </figcaption>
             </figure>
             <figure>
@@ -75,6 +80,7 @@ export default function Landing() {
               <figcaption>
                 <p className="name">Strawberry creme</p>
                 <p className="price">$399</p>
+                <button>Place your order</button>
               </figcaption>
             </figure>
             <figure>
@@ -82,6 +88,7 @@ export default function Landing() {
               <figcaption>
                 <p className="name">3-layer cupcake</p>
                 <p className="price">$90</p>
+                <button>Place your order</button>
               </figcaption>
             </figure>
             <figure>
@@ -89,6 +96,7 @@ export default function Landing() {
               <figcaption>
                 <p className="name">Chocolate cake</p>
                 <p className="price">$1000</p>
+                <button>Place your order</button>
               </figcaption>
             </figure>
             
