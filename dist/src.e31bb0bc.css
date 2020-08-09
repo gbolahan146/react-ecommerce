@@ -109,9 +109,40 @@ nav ul li a {
   margin-top: 2%; }
 
 footer {
-  height: 50px;
   background: #b3e4f9;
+  color: #000;
+  padding: 10px 0px 50px 0px;
+  background-image: linear-gradient(to top, #b3e4f9 30%, #cfebf9 80%, white 100%); }
+
+footer h2 {
+  text-align: center;
+  margin-top: 20px; }
+
+footer h2:hover {
+  color: #FF0066;
+  font-weight: lighter;
+  cursor: pointer;
+  transition: all 3s ease; }
+
+footer nav {
+  display: flex; }
+
+footer ul {
+  display: flex;
+  list-style-type: none;
+  margin-top: 80px;
+  flex-grow: 1;
+  justify-content: space-evenly; }
+
+footer a {
+  text-decoration: none;
   color: #000; }
+
+footer li {
+  margin-left: 10px; }
+
+footer a:hover {
+  color: #FF0066; }
 
 .product_page {
   padding: 2em; }
@@ -194,10 +225,12 @@ button:focus {
   padding: 7px;
   border-radius: 5px;
   margin-top: 12px;
-  box-shadow: 2px 3px 9px #7d747b; }
+  box-shadow: 2px 3px 9px #7d747b;
+  transition: transform .5s; }
 
 .call-products figure:hover {
-  cursor: pointer; }
+  cursor: pointer;
+  transform: scale(1.05); }
 
 .call-products figcaption {
   padding: 8px 16px;
@@ -225,6 +258,66 @@ img.product {
   width: 250px;
   margin-top: 10px;
   border-radius: 5px; }
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */ }
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  height: inherit; }
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s; }
+
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s; }
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer; }
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%; } }
 
 ::-webkit-scrollbar {
   height: 5px;
