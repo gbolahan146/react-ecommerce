@@ -32538,7 +32538,9 @@ function Footer() {
     className: "footer"
   }, _react.default.createElement("footer", null, _react.default.createElement("h3", null, "Footer")));
 }
-},{"react":"../node_modules/react/index.js"}],"components/Landing-page.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js"}],"../assets/img/other1.jpg":[function(require,module,exports) {
+module.exports = "/other1.6f551606.jpg";
+},{}],"components/Landing-page.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32552,6 +32554,30 @@ var _Header = _interopRequireDefault(require("./Header"));
 
 var _Footer = _interopRequireDefault(require("./Footer"));
 
+var _birthday = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday.jpg"));
+
+var _birthday2 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday1.jpg"));
+
+var _birthday3 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday2.jpg"));
+
+var _birthday4 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday3.jpg"));
+
+var _birthday5 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday4.jpg"));
+
+var _birthday6 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday5.jpg"));
+
+var _cup = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup.jpg"));
+
+var _cup2 = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup1.jpg"));
+
+var _cup3 = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup2.jpg"));
+
+var _cup4 = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup3.jpg"));
+
+var _cup5 = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup4.jpg"));
+
+var _other = _interopRequireDefault(require("../../assets/img/other1.jpg"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Landing() {
@@ -32559,9 +32585,79 @@ function Landing() {
     className: "landing"
   }, _react.default.createElement(_Header.default, null), _react.default.createElement("div", {
     className: "landing-body"
-  }, _react.default.createElement("h3", null, "Body")), _react.default.createElement(_Footer.default, null));
+  }, _react.default.createElement("div", {
+    className: "call-to-action"
+  }, _react.default.createElement("div", {
+    className: "call-buttons"
+  }, _react.default.createElement("button", null, "Wedding"), _react.default.createElement("button", null, "Birthday"), _react.default.createElement("button", null, "Cup cake"), _react.default.createElement("button", null, "Chocolate")), _react.default.createElement("div", {
+    className: "action call-products"
+  }, _react.default.createElement("figure", null, _react.default.createElement("img", {
+    src: _birthday3.default,
+    className: "product",
+    alt: ""
+  }), _react.default.createElement("figcaption", null, _react.default.createElement("p", {
+    className: "name"
+  }, "Raspberry cake"), _react.default.createElement("p", {
+    className: "price"
+  }, "$980"), _react.default.createElement("button", null, "Place your order"))), _react.default.createElement("figure", null, _react.default.createElement("img", {
+    src: _cup.default,
+    className: "product",
+    alt: ""
+  }), _react.default.createElement("figcaption", null, _react.default.createElement("p", {
+    className: "name"
+  }, "Strawberry"), _react.default.createElement("p", {
+    className: "price"
+  }, "$560"), _react.default.createElement("button", null, "Place your order"))), _react.default.createElement("figure", null, _react.default.createElement("img", {
+    src: _birthday6.default,
+    className: "product",
+    alt: ""
+  }), _react.default.createElement("figcaption", null, _react.default.createElement("p", {
+    className: "name"
+  }, "Cookie cake"), _react.default.createElement("p", {
+    className: "price"
+  }, "$899"), _react.default.createElement("button", null, "Place your order"))), _react.default.createElement("figure", null, _react.default.createElement("img", {
+    src: _birthday.default,
+    className: "product",
+    alt: ""
+  }), _react.default.createElement("figcaption", null, _react.default.createElement("p", {
+    className: "name"
+  }, "Choco creme"), _react.default.createElement("p", {
+    className: "price"
+  }, "$700"), _react.default.createElement("button", null, "Place your order"))), _react.default.createElement("figure", null, _react.default.createElement("img", {
+    src: _cup2.default,
+    className: "product",
+    alt: ""
+  }), _react.default.createElement("figcaption", null, _react.default.createElement("p", {
+    className: "name"
+  }, "Lemon cupcake"), _react.default.createElement("p", {
+    className: "price"
+  }, "$50"), _react.default.createElement("button", null, "Place your order"))), _react.default.createElement("figure", null, _react.default.createElement("img", {
+    src: _birthday4.default,
+    className: "product",
+    alt: ""
+  }), _react.default.createElement("figcaption", null, _react.default.createElement("p", {
+    className: "name"
+  }, "Strawberry creme"), _react.default.createElement("p", {
+    className: "price"
+  }, "$399"), _react.default.createElement("button", null, "Place your order"))), _react.default.createElement("figure", null, _react.default.createElement("img", {
+    src: _cup4.default,
+    className: "product",
+    alt: ""
+  }), _react.default.createElement("figcaption", null, _react.default.createElement("p", {
+    className: "name"
+  }, "3-layer cupcake"), _react.default.createElement("p", {
+    className: "price"
+  }, "$90"), _react.default.createElement("button", null, "Place your order"))), _react.default.createElement("figure", null, _react.default.createElement("img", {
+    src: _other.default,
+    className: "product",
+    alt: ""
+  }), _react.default.createElement("figcaption", null, _react.default.createElement("p", {
+    className: "name"
+  }, "Chocolate cake"), _react.default.createElement("p", {
+    className: "price"
+  }, "$1000"), _react.default.createElement("button", null, "Place your order")))))), _react.default.createElement(_Footer.default, null));
 }
-},{"react":"../node_modules/react/index.js","./Header":"components/Header.js","./Footer":"components/Footer.js"}],"components/Images.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Header":"components/Header.js","./Footer":"components/Footer.js","./../../assets/img/cakes/birthday/birthday.jpg":"../assets/img/cakes/birthday/birthday.jpg","./../../assets/img/cakes/birthday/birthday1.jpg":"../assets/img/cakes/birthday/birthday1.jpg","./../../assets/img/cakes/birthday/birthday2.jpg":"../assets/img/cakes/birthday/birthday2.jpg","./../../assets/img/cakes/birthday/birthday3.jpg":"../assets/img/cakes/birthday/birthday3.jpg","./../../assets/img/cakes/birthday/birthday4.jpg":"../assets/img/cakes/birthday/birthday4.jpg","./../../assets/img/cakes/birthday/birthday5.jpg":"../assets/img/cakes/birthday/birthday5.jpg","./../../assets/img/cakes/cup/cup.jpg":"../assets/img/cakes/cup/cup.jpg","./../../assets/img/cakes/cup/cup1.jpg":"../assets/img/cakes/cup/cup1.jpg","./../../assets/img/cakes/cup/cup2.jpg":"../assets/img/cakes/cup/cup2.jpg","./../../assets/img/cakes/cup/cup3.jpg":"../assets/img/cakes/cup/cup3.jpg","./../../assets/img/cakes/cup/cup4.jpg":"../assets/img/cakes/cup/cup4.jpg","../../assets/img/other1.jpg":"../assets/img/other1.jpg"}],"components/Images.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32677,7 +32773,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../../assets/img/flat-cake.jpg":[["flat-cake.5edfd24e.jpg","../assets/img/flat-cake.jpg"],"../assets/img/flat-cake.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/symbol-observable/es/ponyfill.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/symbol-observable/es/ponyfill.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35179,7 +35275,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44077" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40837" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

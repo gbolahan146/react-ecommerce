@@ -151,144 +151,80 @@ img {
     .image-gallery birthday {
       justify-content: space-between; } }
 
-/*=====LANDING PAGE(contact section)========*/
-.contact-section {
-  margin-top: 50px; }
-
-.contact-section .left {
-  background-image: url("/flat-cake.5edfd24e.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 90px; }
-
-.contact-section .right {
-  padding: 100px; }
-
-.contact-section form {
-  padding: 20px; }
-
-.contact-section h2 {
-  font-family: 'Pathway Gothic One', sans-serif;
-  color: #3b3a3a; }
-
-input,
-textarea,
-button {
-  margin-top: 10px;
-  border: 1px solid #3b3b3b;
-  padding: 5px;
-  border-radius: 6px;
-  color: #3b3b3b;
-  outline: none; }
-
-.title {
-  margin-left: 90px;
-  border-bottom: 5px solid steelblue;
-  width: 35px;
-  font-family: 'Pathway Gothic One', sans-serif; }
-
-/*===========Landing Page(featured section)============*/
-.featured-section {
-  padding: 20px 0px 30px 0px; }
-
-.featured-section .category {
-  display: flex; }
-
-.featured-section .category-img {
-  display: flex;
-  flex-wrap: wrap; }
-
-.featured-section .category-img img {
-  width: 250px;
-  margin: auto;
-  margin-top: 10px; }
-
-.featured-section .category button {
-  margin: 0px 20px 0px 20px;
-  border-radius: 20px;
-  background-color: white;
-  color: #555454;
-  border: 1px solid grey;
-  width: auto;
-  outline: none; }
-
-.featured-section .category button img {
-  margin-right: 3px;
-  width: 20px;
-  height: 20px; }
-
-.featured-section .featured-cake {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-  height: 250px; }
-
-.featured-section .featured-cake:hover {
-  opacity: 0.7; }
-
-.featured-section .modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  padding-top: 100px;
-  /* Location of the box */
-  left: 0;
-  top: 0;
+.landing-body {
   width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: black;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/ opacity */ }
+  margin: 0 auto;
+  padding: 50px 0; }
 
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  height: inherit; }
+button:hover,
+button:focus {
+  cursor: pointer;
+  outline: none; }
 
-.modal-content,
-#caption {
-  animation-name: zoom;
-  animation-duration: 0.6s; }
+.call-to-action {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto; }
 
-@keyframes zoom {
-  from {
-    transform: scale(0); }
-  to {
-    transform: scale(1); } }
+.call-buttons {
+  margin-left: 20px; }
 
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s; }
+.call-buttons button {
+  background-color: white;
+  border: 1px solid black;
+  padding: 4px 7px;
+  border-radius: 9px;
+  margin-left: 10px; }
 
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
+.call-buttons button:hover,
+.call-buttons button:focus {
+  background-color: #FF0066;
+  border: 1px solid #FF0066;
+  color: white;
+  transition: all 0.7s ease-in-out; }
+
+.call-products {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 10px; }
+
+.call-products figure {
+  border: 1px solid black;
+  padding: 7px;
+  border-radius: 5px;
+  margin-top: 12px;
+  box-shadow: 2px 3px 9px #7d747b; }
+
+.call-products figure:hover {
   cursor: pointer; }
 
-.landing-body {
-  height: 100%; }
+.call-products figcaption {
+  padding: 8px 16px;
+  text-align: center;
+  background-color: #f0eeee; }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%; } }
+.call-products figcaption p {
+  padding: 3px 0px;
+  font-weight: bolder; }
+
+.call-products figcaption button {
+  padding: 5px 10px;
+  border: 1px solid #FF0066;
+  border-radius: 6px;
+  color: white;
+  background-color: #FF0066; }
+
+.call-products figcaption button:hover {
+  background-color: white;
+  color: #FF0066;
+  transition: all 0.7s ease; }
+
+img.product {
+  height: 310px;
+  width: 250px;
+  margin-top: 10px;
+  border-radius: 5px; }
 
 ::-webkit-scrollbar {
   height: 5px;
