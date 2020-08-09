@@ -121,7 +121,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 // Get the modal
 var modal = document.getElementById('myModal'); // Get the image and insert it inside the modal - use its "alt" text as a caption
 
-var images = document.getElementsByClassName('featured-cake');
+var images = document.getElementsByClassName('product');
 var modalImg = document.getElementById('img01');
 var captionText = document.getElementById('caption');
 var imgs = Array.from(images);
@@ -166,7 +166,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40837" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43397" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -32536,7 +32536,19 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function Footer() {
   return _react.default.createElement("div", {
     className: "footer"
-  }, _react.default.createElement("footer", null, _react.default.createElement("h3", null, "Footer")));
+  }, _react.default.createElement("footer", null, _react.default.createElement("h2", null, "Foldables"), _react.default.createElement("nav", null, _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("a", {
+    href: "#"
+  }, "Home")), _react.default.createElement("li", null, _react.default.createElement("a", {
+    href: "#"
+  }, "About")), _react.default.createElement("li", null, _react.default.createElement("a", {
+    href: "#"
+  }, "Contact"))), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("a", {
+    href: "#"
+  }, "Facebook")), _react.default.createElement("li", null, _react.default.createElement("a", {
+    href: "#"
+  }, "Twitter")), _react.default.createElement("li", null, _react.default.createElement("a", {
+    href: "#"
+  }, "Instagram"))))));
 }
 },{"react":"../node_modules/react/index.js"}],"../assets/img/other1.jpg":[function(require,module,exports) {
 module.exports = "/other1.6f551606.jpg";
@@ -32655,7 +32667,17 @@ function Landing() {
     className: "name"
   }, "Chocolate cake"), _react.default.createElement("p", {
     className: "price"
-  }, "$1000"), _react.default.createElement("button", null, "Place your order")))))), _react.default.createElement(_Footer.default, null));
+  }, "$1000"), _react.default.createElement("button", null, "Place your order"))), _react.default.createElement("div", {
+    id: "myModal",
+    "class": "modal"
+  }, _react.default.createElement("span", {
+    "class": "close"
+  }, "\xD7"), _react.default.createElement("img", {
+    "class": "modal-content",
+    id: "img01"
+  }), _react.default.createElement("div", {
+    id: "caption"
+  }))))), _react.default.createElement(_Footer.default, null));
 }
 },{"react":"../node_modules/react/index.js","./Header":"components/Header.js","./Footer":"components/Footer.js","./../../assets/img/cakes/birthday/birthday.jpg":"../assets/img/cakes/birthday/birthday.jpg","./../../assets/img/cakes/birthday/birthday1.jpg":"../assets/img/cakes/birthday/birthday1.jpg","./../../assets/img/cakes/birthday/birthday2.jpg":"../assets/img/cakes/birthday/birthday2.jpg","./../../assets/img/cakes/birthday/birthday3.jpg":"../assets/img/cakes/birthday/birthday3.jpg","./../../assets/img/cakes/birthday/birthday4.jpg":"../assets/img/cakes/birthday/birthday4.jpg","./../../assets/img/cakes/birthday/birthday5.jpg":"../assets/img/cakes/birthday/birthday5.jpg","./../../assets/img/cakes/cup/cup.jpg":"../assets/img/cakes/cup/cup.jpg","./../../assets/img/cakes/cup/cup1.jpg":"../assets/img/cakes/cup/cup1.jpg","./../../assets/img/cakes/cup/cup2.jpg":"../assets/img/cakes/cup/cup2.jpg","./../../assets/img/cakes/cup/cup3.jpg":"../assets/img/cakes/cup/cup3.jpg","./../../assets/img/cakes/cup/cup4.jpg":"../assets/img/cakes/cup/cup4.jpg","../../assets/img/other1.jpg":"../assets/img/other1.jpg"}],"components/Images.js":[function(require,module,exports) {
 "use strict";
@@ -35275,7 +35297,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40837" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43397" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
