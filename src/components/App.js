@@ -1,6 +1,10 @@
 import React from 'react';
-import Productpage from './Product_page';
-import Landing from './Landing-page';
+import Productpage from '../pages/Product_page';
+import Landing from '../pages/Landing-page';
+import SigninPage from '../pages/Signin-page';
+import AboutUsPage from '../pages/Aboutus-page';
+import ContactPage from '../pages/Contact-page';
+import CartCheckoutPage from '../pages/CartCheckout-page';
 import Images from './Images';
 import { Route, Switch } from 'react-router-dom';
 
@@ -10,6 +14,10 @@ export default function App() {
       <Switch>
         <Route exact path="/" component={Landing} />
         <Route exact path="/products" component={Productpage} />
+        <Route exact path="/signin" component={SigninPage} />
+        <Route exact path="/aboutus" component={AboutUsPage} />
+        <Route exact path="/contact" component={ContactPage} />
+        <Route exact path="/cart" component={CartCheckoutPage} />
       </Switch>
     </div>
   );

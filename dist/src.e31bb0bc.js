@@ -28379,7 +28379,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/Product_page.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"pages/Product_page.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28389,27 +28389,27 @@ exports.default = ProductPage;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _birthday = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday.jpg"));
+var _birthday = _interopRequireDefault(require("../../assets/img/cakes/birthday/birthday.jpg"));
 
-var _birthday2 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday1.jpg"));
+var _birthday2 = _interopRequireDefault(require("../../assets/img/cakes/birthday/birthday1.jpg"));
 
-var _birthday3 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday2.jpg"));
+var _birthday3 = _interopRequireDefault(require("../../assets/img/cakes/birthday/birthday2.jpg"));
 
-var _birthday4 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday3.jpg"));
+var _birthday4 = _interopRequireDefault(require("../../assets/img/cakes/birthday/birthday3.jpg"));
 
-var _birthday5 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday4.jpg"));
+var _birthday5 = _interopRequireDefault(require("../../assets/img/cakes/birthday/birthday4.jpg"));
 
-var _birthday6 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday5.jpg"));
+var _birthday6 = _interopRequireDefault(require("../../assets/img/cakes/birthday/birthday5.jpg"));
 
-var _cup = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup.jpg"));
+var _cup = _interopRequireDefault(require("../../assets/img/cakes/cup/cup.jpg"));
 
-var _cup2 = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup1.jpg"));
+var _cup2 = _interopRequireDefault(require("../../assets/img/cakes/cup/cup1.jpg"));
 
-var _cup3 = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup2.jpg"));
+var _cup3 = _interopRequireDefault(require("../../assets/img/cakes/cup/cup2.jpg"));
 
-var _cup4 = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup3.jpg"));
+var _cup4 = _interopRequireDefault(require("../../assets/img/cakes/cup/cup3.jpg"));
 
-var _cup5 = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup4.jpg"));
+var _cup5 = _interopRequireDefault(require("../../assets/img/cakes/cup/cup4.jpg"));
 
 require("../scss/product_page.scss");
 
@@ -28485,7 +28485,7 @@ function ProductPage(_ref) {
 //         }}/>
 //   ))
 // }
-},{"react":"../node_modules/react/index.js","./../../assets/img/cakes/birthday/birthday.jpg":"../assets/img/cakes/birthday/birthday.jpg","./../../assets/img/cakes/birthday/birthday1.jpg":"../assets/img/cakes/birthday/birthday1.jpg","./../../assets/img/cakes/birthday/birthday2.jpg":"../assets/img/cakes/birthday/birthday2.jpg","./../../assets/img/cakes/birthday/birthday3.jpg":"../assets/img/cakes/birthday/birthday3.jpg","./../../assets/img/cakes/birthday/birthday4.jpg":"../assets/img/cakes/birthday/birthday4.jpg","./../../assets/img/cakes/birthday/birthday5.jpg":"../assets/img/cakes/birthday/birthday5.jpg","./../../assets/img/cakes/cup/cup.jpg":"../assets/img/cakes/cup/cup.jpg","./../../assets/img/cakes/cup/cup1.jpg":"../assets/img/cakes/cup/cup1.jpg","./../../assets/img/cakes/cup/cup2.jpg":"../assets/img/cakes/cup/cup2.jpg","./../../assets/img/cakes/cup/cup3.jpg":"../assets/img/cakes/cup/cup3.jpg","./../../assets/img/cakes/cup/cup4.jpg":"../assets/img/cakes/cup/cup4.jpg","../scss/product_page.scss":"scss/product_page.scss"}],"../node_modules/@babel/runtime/helpers/esm/inheritsLoose.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../../assets/img/cakes/birthday/birthday.jpg":"../assets/img/cakes/birthday/birthday.jpg","../../assets/img/cakes/birthday/birthday1.jpg":"../assets/img/cakes/birthday/birthday1.jpg","../../assets/img/cakes/birthday/birthday2.jpg":"../assets/img/cakes/birthday/birthday2.jpg","../../assets/img/cakes/birthday/birthday3.jpg":"../assets/img/cakes/birthday/birthday3.jpg","../../assets/img/cakes/birthday/birthday4.jpg":"../assets/img/cakes/birthday/birthday4.jpg","../../assets/img/cakes/birthday/birthday5.jpg":"../assets/img/cakes/birthday/birthday5.jpg","../../assets/img/cakes/cup/cup.jpg":"../assets/img/cakes/cup/cup.jpg","../../assets/img/cakes/cup/cup1.jpg":"../assets/img/cakes/cup/cup1.jpg","../../assets/img/cakes/cup/cup2.jpg":"../assets/img/cakes/cup/cup2.jpg","../../assets/img/cakes/cup/cup3.jpg":"../assets/img/cakes/cup/cup3.jpg","../../assets/img/cakes/cup/cup4.jpg":"../assets/img/cakes/cup/cup4.jpg","../scss/product_page.scss":"scss/product_page.scss"}],"../node_modules/@babel/runtime/helpers/esm/inheritsLoose.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32479,30 +32479,30 @@ function Header() {
     className: "header__base"
   }, _react.default.createElement("header", null, _react.default.createElement("div", {
     className: "brand"
-  }, _react.default.createElement("a", {
-    href: ""
+  }, _react.default.createElement(_reactRouterDom.Link, {
+    to: "/"
   }, "Foldables")), _react.default.createElement("nav", null, _react.default.createElement("ul", {
     className: "nav-list"
   }, _react.default.createElement("li", {
     className: "nav-item"
-  }, _react.default.createElement("a", {
-    href: "#"
+  }, _react.default.createElement(_reactRouterDom.Link, {
+    to: "/aboutus"
   }, "About Us")), _react.default.createElement("li", {
     className: "nav-item"
-  }, _react.default.createElement("a", {
-    href: "#"
+  }, _react.default.createElement(_reactRouterDom.Link, {
+    to: "contact"
   }, "Contact")), _react.default.createElement("li", {
     className: "nav-item"
   }, _react.default.createElement(_reactRouterDom.Link, {
     to: "products"
   }, "Products")), _react.default.createElement("li", {
     className: "nav-item"
-  }, _react.default.createElement("a", {
-    href: "#"
-  }, "Sign in")), _react.default.createElement("li", {
+  }, _react.default.createElement(_reactRouterDom.Link, {
+    to: "signin"
+  }, "Sign In")), _react.default.createElement("li", {
     className: "nav-item"
-  }, _react.default.createElement("a", {
-    href: "#"
+  }, _react.default.createElement(_reactRouterDom.Link, {
+    to: "cart"
   }, "Cart ", _react.default.createElement("i", {
     "class": "fa fa-cart-arrow-down"
   })))))), _react.default.createElement("div", {
@@ -32552,7 +32552,7 @@ function Footer() {
 }
 },{"react":"../node_modules/react/index.js"}],"../assets/img/other1.jpg":[function(require,module,exports) {
 module.exports = "/other1.6f551606.jpg";
-},{}],"components/Landing-page.js":[function(require,module,exports) {
+},{}],"pages/Landing-page.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32562,31 +32562,31 @@ exports.default = Landing;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _Header = _interopRequireDefault(require("./Header"));
+var _Header = _interopRequireDefault(require("../components/Header"));
 
-var _Footer = _interopRequireDefault(require("./Footer"));
+var _Footer = _interopRequireDefault(require("../components/Footer"));
 
-var _birthday = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday.jpg"));
+var _birthday = _interopRequireDefault(require("../../assets/img/cakes/birthday/birthday.jpg"));
 
-var _birthday2 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday1.jpg"));
+var _birthday2 = _interopRequireDefault(require("../../assets/img/cakes/birthday/birthday1.jpg"));
 
-var _birthday3 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday2.jpg"));
+var _birthday3 = _interopRequireDefault(require("../../assets/img/cakes/birthday/birthday2.jpg"));
 
-var _birthday4 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday3.jpg"));
+var _birthday4 = _interopRequireDefault(require("../../assets/img/cakes/birthday/birthday3.jpg"));
 
-var _birthday5 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday4.jpg"));
+var _birthday5 = _interopRequireDefault(require("../../assets/img/cakes/birthday/birthday4.jpg"));
 
-var _birthday6 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday5.jpg"));
+var _birthday6 = _interopRequireDefault(require("../../assets/img/cakes/birthday/birthday5.jpg"));
 
-var _cup = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup.jpg"));
+var _cup = _interopRequireDefault(require("../../assets/img/cakes/cup/cup.jpg"));
 
-var _cup2 = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup1.jpg"));
+var _cup2 = _interopRequireDefault(require("../../assets/img/cakes/cup/cup1.jpg"));
 
-var _cup3 = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup2.jpg"));
+var _cup3 = _interopRequireDefault(require("../../assets/img/cakes/cup/cup2.jpg"));
 
-var _cup4 = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup3.jpg"));
+var _cup4 = _interopRequireDefault(require("../../assets/img/cakes/cup/cup3.jpg"));
 
-var _cup5 = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup4.jpg"));
+var _cup5 = _interopRequireDefault(require("../../assets/img/cakes/cup/cup4.jpg"));
 
 var _other = _interopRequireDefault(require("../../assets/img/other1.jpg"));
 
@@ -32679,7 +32679,79 @@ function Landing() {
     id: "caption"
   }))))), _react.default.createElement(_Footer.default, null));
 }
-},{"react":"../node_modules/react/index.js","./Header":"components/Header.js","./Footer":"components/Footer.js","./../../assets/img/cakes/birthday/birthday.jpg":"../assets/img/cakes/birthday/birthday.jpg","./../../assets/img/cakes/birthday/birthday1.jpg":"../assets/img/cakes/birthday/birthday1.jpg","./../../assets/img/cakes/birthday/birthday2.jpg":"../assets/img/cakes/birthday/birthday2.jpg","./../../assets/img/cakes/birthday/birthday3.jpg":"../assets/img/cakes/birthday/birthday3.jpg","./../../assets/img/cakes/birthday/birthday4.jpg":"../assets/img/cakes/birthday/birthday4.jpg","./../../assets/img/cakes/birthday/birthday5.jpg":"../assets/img/cakes/birthday/birthday5.jpg","./../../assets/img/cakes/cup/cup.jpg":"../assets/img/cakes/cup/cup.jpg","./../../assets/img/cakes/cup/cup1.jpg":"../assets/img/cakes/cup/cup1.jpg","./../../assets/img/cakes/cup/cup2.jpg":"../assets/img/cakes/cup/cup2.jpg","./../../assets/img/cakes/cup/cup3.jpg":"../assets/img/cakes/cup/cup3.jpg","./../../assets/img/cakes/cup/cup4.jpg":"../assets/img/cakes/cup/cup4.jpg","../../assets/img/other1.jpg":"../assets/img/other1.jpg"}],"components/Images.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../components/Header":"components/Header.js","../components/Footer":"components/Footer.js","../../assets/img/cakes/birthday/birthday.jpg":"../assets/img/cakes/birthday/birthday.jpg","../../assets/img/cakes/birthday/birthday1.jpg":"../assets/img/cakes/birthday/birthday1.jpg","../../assets/img/cakes/birthday/birthday2.jpg":"../assets/img/cakes/birthday/birthday2.jpg","../../assets/img/cakes/birthday/birthday3.jpg":"../assets/img/cakes/birthday/birthday3.jpg","../../assets/img/cakes/birthday/birthday4.jpg":"../assets/img/cakes/birthday/birthday4.jpg","../../assets/img/cakes/birthday/birthday5.jpg":"../assets/img/cakes/birthday/birthday5.jpg","../../assets/img/cakes/cup/cup.jpg":"../assets/img/cakes/cup/cup.jpg","../../assets/img/cakes/cup/cup1.jpg":"../assets/img/cakes/cup/cup1.jpg","../../assets/img/cakes/cup/cup2.jpg":"../assets/img/cakes/cup/cup2.jpg","../../assets/img/cakes/cup/cup3.jpg":"../assets/img/cakes/cup/cup3.jpg","../../assets/img/cakes/cup/cup4.jpg":"../assets/img/cakes/cup/cup4.jpg","../../assets/img/other1.jpg":"../assets/img/other1.jpg"}],"pages/Signin-page.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var SigninPage = function SigninPage() {
+  return _react.default.createElement("div", null, "Already have an account? sign in. New here? sign up.");
+};
+
+var _default = SigninPage;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"pages/Aboutus-page.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var AboutUsPage = function AboutUsPage() {
+  return _react.default.createElement("div", null, "React Team B");
+};
+
+var _default = AboutUsPage;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"pages/Contact-page.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ContactPage = function ContactPage() {
+  return _react.default.createElement("div", null, "CALEB NA OUR OGA, CONTACT HIM");
+};
+
+var _default = ContactPage;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"pages/CartCheckout-page.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var CartCheckoutPage = function CartCheckoutPage() {
+  return _react.default.createElement("div", null, "EMPTY CART");
+};
+
+var _default = CartCheckoutPage;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"components/Images.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32767,9 +32839,17 @@ exports.default = App;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _Product_page = _interopRequireDefault(require("./Product_page"));
+var _Product_page = _interopRequireDefault(require("../pages/Product_page"));
 
-var _LandingPage = _interopRequireDefault(require("./Landing-page"));
+var _LandingPage = _interopRequireDefault(require("../pages/Landing-page"));
+
+var _SigninPage = _interopRequireDefault(require("../pages/Signin-page"));
+
+var _AboutusPage = _interopRequireDefault(require("../pages/Aboutus-page"));
+
+var _ContactPage = _interopRequireDefault(require("../pages/Contact-page"));
+
+var _CartCheckoutPage = _interopRequireDefault(require("../pages/CartCheckout-page"));
 
 var _Images = _interopRequireDefault(require("./Images"));
 
@@ -32788,9 +32868,25 @@ function App() {
     exact: true,
     path: "/products",
     component: _Product_page.default
+  }), _react.default.createElement(_reactRouterDom.Route, {
+    exact: true,
+    path: "/signin",
+    component: _SigninPage.default
+  }), _react.default.createElement(_reactRouterDom.Route, {
+    exact: true,
+    path: "/aboutus",
+    component: _AboutusPage.default
+  }), _react.default.createElement(_reactRouterDom.Route, {
+    exact: true,
+    path: "/contact",
+    component: _ContactPage.default
+  }), _react.default.createElement(_reactRouterDom.Route, {
+    exact: true,
+    path: "/cart",
+    component: _CartCheckoutPage.default
   })));
 }
-},{"react":"../node_modules/react/index.js","./Product_page":"components/Product_page.js","./Landing-page":"components/Landing-page.js","./Images":"components/Images.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"scss/app.scss":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../pages/Product_page":"pages/Product_page.js","../pages/Landing-page":"pages/Landing-page.js","../pages/Signin-page":"pages/Signin-page.js","../pages/Aboutus-page":"pages/Aboutus-page.js","../pages/Contact-page":"pages/Contact-page.js","../pages/CartCheckout-page":"pages/CartCheckout-page.js","./Images":"components/Images.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"scss/app.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -35297,7 +35393,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43397" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50226" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
