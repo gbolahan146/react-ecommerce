@@ -29,6 +29,9 @@ export default function Header() {
             </li>
           </ul>
         </nav>
+        <div className="menu">
+          <i class="fa fa-bars"></i>
+        </div>
       </header>
     </div>
   );
