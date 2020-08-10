@@ -1,11 +1,7 @@
 import React from 'react';
 
 const CartCheckoutPage = () => {
-    return (
-        <div>
-            EMPTY CART
-        </div>
-    )
-} 
+  return <div>EMPTY CART</div>;
+};
 
-export default CartCheckoutPage
+export default CartCheckoutPage;
