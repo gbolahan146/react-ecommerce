@@ -32792,6 +32792,8 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -32844,25 +32846,31 @@ var Register = /*#__PURE__*/function (_Component) {
         to: "/signin"
       }, " Sign in!"))), _react.default.createElement("form", {
         className: "Reg-form Reg-form-h"
-      }, _react.default.createElement("div", {
-        className: "flex flex-btw"
-      }, _react.default.createElement("label", null, _react.default.createElement("input", {
+      }, _react.default.createElement("input", _defineProperty({
+        className: "input",
         type: "text",
-        placeholder: "First Name",
-        className: "input-half"
-      })), _react.default.createElement("label", null, _react.default.createElement("input", {
+        placeholder: "First Name"
+      }, "className", "input-full")), _react.default.createElement("label", {
+        className: "label"
+      }, "First Name"), _react.default.createElement("input", _defineProperty({
+        className: "input",
         type: "text",
-        placeholder: "Last Name",
-        className: "input-half"
-      }))), _react.default.createElement("div", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+        placeholder: "Last Name"
+      }, "className", "input-full")), _react.default.createElement("label", {
+        className: "label"
+      }, "Last Name"), _react.default.createElement("input", _defineProperty({
+        className: "input",
         type: "email",
-        placeholder: "Email Address",
-        className: "input-full"
-      }))), _react.default.createElement("div", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+        placeholder: "Email Address"
+      }, "className", "input-full")), _react.default.createElement("label", {
+        className: "label"
+      }, "Email"), _react.default.createElement("input", _defineProperty({
+        className: "input",
         type: "password",
-        placeholder: "Password",
-        className: "input-full"
-      }))), _react.default.createElement("button", {
+        placeholder: "Password"
+      }, "className", "input-full")), _react.default.createElement("label", {
+        className: "label"
+      }, "Password"), _react.default.createElement("button", {
         className: "Register-btn"
       }, "Register")))));
     }
@@ -35654,7 +35662,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43633" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38663" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
