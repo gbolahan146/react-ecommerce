@@ -32751,15 +32751,15 @@ var Login = /*#__PURE__*/function (_Component) {
         className: "Register-subtext"
       }, "Not into cake yet? ", _react.default.createElement("span", null, "Get In!")), _react.default.createElement("form", {
         className: "Reg-form Login-form"
-      }, _react.default.createElement("div", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+      }, _react.default.createElement("div", null, _react.default.createElement("input", {
         type: "email",
         placeholder: "Email Address",
         className: "input-full"
-      }))), _react.default.createElement("div", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+      }), _react.default.createElement("label", null, "Email")), _react.default.createElement("div", null, _react.default.createElement("input", {
         type: "password",
         placeholder: "Password",
         className: "input-full"
-      }))), _react.default.createElement("button", {
+      }), _react.default.createElement("label", null, "Password")), _react.default.createElement("button", {
         className: "Register-btn"
       }, "Login"), _react.default.createElement("h5", {
         className: "Register-subtext"
@@ -32791,8 +32791,6 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -32846,31 +32844,23 @@ var Register = /*#__PURE__*/function (_Component) {
         to: "/signin"
       }, " Sign in!"))), _react.default.createElement("form", {
         className: "Reg-form Reg-form-h"
-      }, _react.default.createElement("input", _defineProperty({
-        className: "input",
+      }, _react.default.createElement("input", {
         type: "text",
-        placeholder: "First Name"
-      }, "className", "input-full")), _react.default.createElement("label", {
-        className: "label"
-      }, "First Name"), _react.default.createElement("input", _defineProperty({
-        className: "input",
+        placeholder: "First Name",
+        className: "input-full"
+      }), _react.default.createElement("label", null, "First Name"), _react.default.createElement("input", {
         type: "text",
-        placeholder: "Last Name"
-      }, "className", "input-full")), _react.default.createElement("label", {
-        className: "label"
-      }, "Last Name"), _react.default.createElement("input", _defineProperty({
-        className: "input",
+        placeholder: "Last Name",
+        className: "input-full"
+      }), _react.default.createElement("label", null, "Last Name"), _react.default.createElement("input", {
         type: "email",
-        placeholder: "Email Address"
-      }, "className", "input-full")), _react.default.createElement("label", {
-        className: "label"
-      }, "Email"), _react.default.createElement("input", _defineProperty({
-        className: "input",
+        placeholder: "Email Address",
+        className: "input-full"
+      }), _react.default.createElement("label", null, "Email"), _react.default.createElement("input", {
         type: "password",
-        placeholder: "Password"
-      }, "className", "input-full")), _react.default.createElement("label", {
-        className: "label"
-      }, "Password"), _react.default.createElement("button", {
+        placeholder: "Password",
+        className: "input-full"
+      }), _react.default.createElement("label", null, "Password"), _react.default.createElement("button", {
         className: "Register-btn"
       }, "Register")))));
     }

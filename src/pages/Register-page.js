@@ -23,33 +23,29 @@ class Register extends Component {
             </h5>
             <form className="Reg-form Reg-form-h">
               <input
-                className="input"
                 type="text"
                 placeholder="First Name"
                 className="input-full"
               />
-              <label className="label">First Name</label>
+              <label>First Name</label>
               <input
-                className="input"
                 type="text"
                 placeholder="Last Name"
                 className="input-full"
               />
-              <label className="label">Last Name</label>
+              <label>Last Name</label>
               <input
-                className="input"
                 type="email"
                 placeholder="Email Address"
                 className="input-full"
               />
-              <label className="label">Email</label>
+              <label>Email</label>
               <input
-                className="input"
                 type="password"
                 placeholder="Password"
                 className="input-full"
               />
-              <label className="label">Password</label>
+              <label>Password</label>
               <button className="Register-btn">Register</button>
             </form>
           </div>

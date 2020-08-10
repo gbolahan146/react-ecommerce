@@ -20,22 +20,20 @@ class Login extends Component {
             </h5>
             <form className="Reg-form Login-form">
               <div>
-                <label>
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    className="input-full"
-                  />
-                </label>
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="input-full"
+                />
+                <label>Email</label>
               </div>
               <div>
-                <label>
-                  <input
-                    type="password"
-                    placeholder="Password"
-                    className="input-full"
-                  />
-                </label>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  className="input-full"
+                />
+                <label>Password</label>
               </div>
               <button className="Register-btn">Login</button>
               <h5 className="Register-subtext">
