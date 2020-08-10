@@ -32500,17 +32500,12 @@ function Header() {
   }, _react.default.createElement(_reactRouterDom.Link, {
     to: "cart"
   }, "Cart ", _react.default.createElement("i", {
-<<<<<<< HEAD
     className: "fa fa-cart-arrow-down"
-  })))))));
-=======
-    "class": "fa fa-cart-arrow-down"
   }))))), _react.default.createElement("div", {
     className: "menu"
   }, _react.default.createElement("i", {
     "class": "fa fa-bars"
   }))));
->>>>>>> upstream/master
 }
 },{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"components/Footer.js":[function(require,module,exports) {
 "use strict";
@@ -57857,10 +57852,11 @@ var Register = /*#__PURE__*/function (_Component) {
       }, " Sign in!"))), _react.default.createElement("form", {
         onSubmit: this.handleSubmit,
         className: "Reg-form Reg-form-h"
-      }, _react.default.createElement("input", {
+      }, _react.default.createElement("div", {
+        className: "flex flex-btw"
+      }, _react.default.createElement("label", null, _react.default.createElement("input", {
         type: "text",
         placeholder: "First Name",
-<<<<<<< HEAD
         className: "input-half",
         name: "firstName",
         value: this.state.firstName
@@ -57886,22 +57882,6 @@ var Register = /*#__PURE__*/function (_Component) {
         value: this.state.password,
         onChange: this.handleChange
       }))), _react.default.createElement("button", {
-=======
-        className: "input-full"
-      }), _react.default.createElement("label", null, "First Name"), _react.default.createElement("input", {
-        type: "text",
-        placeholder: "Last Name",
-        className: "input-full"
-      }), _react.default.createElement("label", null, "Last Name"), _react.default.createElement("input", {
-        type: "email",
-        placeholder: "Email Address",
-        className: "input-full"
-      }), _react.default.createElement("label", null, "Email"), _react.default.createElement("input", {
-        type: "password",
-        placeholder: "Password",
-        className: "input-full"
-      }), _react.default.createElement("label", null, "Password"), _react.default.createElement("button", {
->>>>>>> upstream/master
         className: "Register-btn"
       }, "Register")))));
     }
@@ -57912,11 +57892,7 @@ var Register = /*#__PURE__*/function (_Component) {
 
 var _default = Register;
 exports.default = _default;
-<<<<<<< HEAD
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../Firebase/utils":"Firebase/utils.js"}],"../assets/img/td.jpg":[function(require,module,exports) {
-module.exports = "/td.86f58e3d.jpg";
-=======
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"../assets/img/other.jpg":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../Firebase/utils":"Firebase/utils.js"}],"../assets/img/other.jpg":[function(require,module,exports) {
 module.exports = "/other.b33c2b8b.jpg";
 },{}],"../assets/img/other3.jpg":[function(require,module,exports) {
 module.exports = "/other3.dee78b88.jpg";
@@ -57928,7 +57904,6 @@ module.exports = "/staff1.448589eb.jpeg";
 module.exports = "/staff2.8ac48fbf.jpeg";
 },{}],"../assets/img/staff3.jpeg":[function(require,module,exports) {
 module.exports = "/staff3.a1ec5a8f.jpeg";
->>>>>>> upstream/master
 },{}],"pages/Aboutus-page.js":[function(require,module,exports) {
 "use strict";
 
@@ -60764,11 +60739,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-<<<<<<< HEAD
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49369" + '/');
-=======
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45965" + '/');
->>>>>>> upstream/master
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49491" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
