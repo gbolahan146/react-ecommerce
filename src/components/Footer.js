@@ -18,19 +18,20 @@ export default function Footer() {
               <a href="#">Contact</a>
             </li>
           </ul>
-
-          <ul>
-            <li>
-              <a href="#">Facebook</a>
-            </li>
-            <li>
-              <a href="#">Twitter</a>
-            </li>
-            <li>
-              <a href="#">Instagram</a>
-            </li>
-          </ul>
         </nav>
+
+
+        <div className="socials">
+              <i className="fa fa-facebook">
+                <a href="#" ></a>
+              </i>
+              <i className="fa fa-instagram">
+                <a href="#" ></a>
+              </i>
+              <i className="fa fa-twitter">
+                <a href="#" ></a>
+              </i>
+              </div>
       </footer>
     </div>
   );

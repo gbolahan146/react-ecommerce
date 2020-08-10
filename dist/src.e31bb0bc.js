@@ -32528,13 +32528,21 @@ function Footer() {
     href: "#"
   }, "About")), _react.default.createElement("li", null, _react.default.createElement("a", {
     href: "#"
-  }, "Contact"))), _react.default.createElement("ul", null, _react.default.createElement("li", null, _react.default.createElement("a", {
+  }, "Contact")))), _react.default.createElement("div", {
+    className: "socials"
+  }, _react.default.createElement("i", {
+    className: "fa fa-facebook"
+  }, _react.default.createElement("a", {
     href: "#"
-  }, "Facebook")), _react.default.createElement("li", null, _react.default.createElement("a", {
+  })), _react.default.createElement("i", {
+    className: "fa fa-instagram"
+  }, _react.default.createElement("a", {
     href: "#"
-  }, "Twitter")), _react.default.createElement("li", null, _react.default.createElement("a", {
+  })), _react.default.createElement("i", {
+    className: "fa fa-twitter"
+  }, _react.default.createElement("a", {
     href: "#"
-  }, "Instagram"))))));
+  })))));
 }
 },{"react":"../node_modules/react/index.js"}],"../assets/img/flat-cake.jpg":[function(require,module,exports) {
 module.exports = "/flat-cake.5edfd24e.jpg";
@@ -35807,7 +35815,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45103" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35397" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

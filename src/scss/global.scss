@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+  // border: 1px solid red; --debugger
 }
 
 body {
@@ -131,7 +132,7 @@ footer h2:hover {
   font-weight: lighter;
   cursor: pointer;
   // transition: all 0.9s ease-in;
-  transition: all 3s ease;
+  transition: all .9s ease;
 }
 
 footer nav {
@@ -159,6 +160,31 @@ footer a:hover {
   color: $pinkish;
 }
 
+.socials {
+  display: flex;
+  margin-top: 2%;
+  justify-content: center;
+}
+
+.socials i {
+  margin: 24px;
+  font-size: 23px;
+  border: 1px solid;
+  height: 38px;
+  width: 38px;
+  padding: 8px;
+  border-radius: 50%;
+
+  &:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: $pinkish;
+    transition: all .6s ease;
+  }
+}
+
+// footer section ends here
+
 @media only screen and (max-width: 576px) {
   .menu {
     display: block;
@@ -171,5 +197,14 @@ footer a:hover {
   header {
     justify-content: space-between;
     padding: 15px 18px;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .footer nav ul li {
+    font-size: 14px;
+    margin: 16px 8px;
   }
 }
