@@ -32501,7 +32501,11 @@ function Header() {
     to: "cart"
   }, "Cart ", _react.default.createElement("i", {
     "class": "fa fa-cart-arrow-down"
-  })))))));
+  }))))), _react.default.createElement("div", {
+    className: "menu"
+  }, _react.default.createElement("i", {
+    "class": "fa fa-bars"
+  }))));
 }
 },{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"components/Footer.js":[function(require,module,exports) {
 "use strict";
@@ -35650,7 +35654,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45747" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43633" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

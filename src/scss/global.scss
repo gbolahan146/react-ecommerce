@@ -9,6 +9,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+body {
+  background: $ghostwhite;
+}
+
 .app__base {
   min-height: 100vh;
 }
@@ -94,6 +98,14 @@ nav ul li a {
   margin-top: 2%;
 }
 
+.menu {
+  display: none;
+}
+
+.fa-bars {
+  font-size: 28px;
+}
+
 // header section ends here
 
 // footer section starts here
@@ -138,4 +150,20 @@ footer li {
 }
 footer a:hover {
   color: $pinkish;
+}
+
+
+@media only screen and (max-width: 576px) {
+  .menu {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  header {
+    justify-content: space-between;
+    padding: 15px 18px;
+  }
 }
