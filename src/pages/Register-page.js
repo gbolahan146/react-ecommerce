@@ -22,40 +22,30 @@ class Register extends Component {
               </span>
             </h5>
             <form className="Reg-form Reg-form-h">
-              <div className="flex flex-btw">
-                <label>
-                  <input
-                    type="text"
-                    placeholder="First Name"
-                    className="input-half"
-                  />
-                </label>
-                <label>
-                  <input
-                    type="text"
-                    placeholder="Last Name"
-                    className="input-half"
-                  />
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    className="input-full"
-                  />
-                </label>
-              </div>
-              <div>
-                <label>
-                  <input
-                    type="password"
-                    placeholder="Password"
-                    className="input-full"
-                  />
-                </label>
-              </div>
+              <input
+                type="text"
+                placeholder="First Name"
+                className="input-full"
+              />
+              <label>First Name</label>
+              <input
+                type="text"
+                placeholder="Last Name"
+                className="input-full"
+              />
+              <label>Last Name</label>
+              <input
+                type="email"
+                placeholder="Email Address"
+                className="input-full"
+              />
+              <label>Email</label>
+              <input
+                type="password"
+                placeholder="Password"
+                className="input-full"
+              />
+              <label>Password</label>
               <button className="Register-btn">Register</button>
             </form>
           </div>
