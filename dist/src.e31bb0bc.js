@@ -33216,7 +33216,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../../assets/img/cakes/cup/cup.jpg":[["cup.39370689.jpg","../assets/img/cakes/cup/cup.jpg"],"../assets/img/cakes/cup/cup.jpg"],"./../../assets/img/cakes/cup/cup2.jpg":[["cup2.4ecb9088.jpg","../assets/img/cakes/cup/cup2.jpg"],"../assets/img/cakes/cup/cup2.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/symbol-observable/es/ponyfill.js":[function(require,module,exports) {
+},{"./../../assets/img/about-bg.jpeg":[["about-bg.bdd3741e.jpeg","../assets/img/about-bg.jpeg"],"../assets/img/about-bg.jpeg"],"./../../assets/img/cakes/cup/cup.jpg":[["cup.39370689.jpg","../assets/img/cakes/cup/cup.jpg"],"../assets/img/cakes/cup/cup.jpg"],"./../../assets/img/cakes/cup/cup2.jpg":[["cup2.4ecb9088.jpg","../assets/img/cakes/cup/cup2.jpg"],"../assets/img/cakes/cup/cup2.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/symbol-observable/es/ponyfill.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35718,7 +35718,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44353" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36047" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
