@@ -32751,15 +32751,15 @@ var Login = /*#__PURE__*/function (_Component) {
         className: "Register-subtext"
       }, "Not into cake yet? ", _react.default.createElement("span", null, "Get In!")), _react.default.createElement("form", {
         className: "Reg-form Login-form"
-      }, _react.default.createElement("div", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+      }, _react.default.createElement("div", null, _react.default.createElement("input", {
         type: "email",
         placeholder: "Email Address",
         className: "input-full"
-      }))), _react.default.createElement("div", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+      }), _react.default.createElement("label", null, "Email")), _react.default.createElement("div", null, _react.default.createElement("input", {
         type: "password",
         placeholder: "Password",
         className: "input-full"
-      }))), _react.default.createElement("button", {
+      }), _react.default.createElement("label", null, "Password")), _react.default.createElement("button", {
         className: "Register-btn"
       }, "Login"), _react.default.createElement("h5", {
         className: "Register-subtext"
@@ -32844,25 +32844,23 @@ var Register = /*#__PURE__*/function (_Component) {
         to: "/signin"
       }, " Sign in!"))), _react.default.createElement("form", {
         className: "Reg-form Reg-form-h"
-      }, _react.default.createElement("div", {
-        className: "flex flex-btw"
-      }, _react.default.createElement("label", null, _react.default.createElement("input", {
+      }, _react.default.createElement("input", {
         type: "text",
         placeholder: "First Name",
-        className: "input-half"
-      })), _react.default.createElement("label", null, _react.default.createElement("input", {
+        className: "input-full"
+      }), _react.default.createElement("label", null, "First Name"), _react.default.createElement("input", {
         type: "text",
         placeholder: "Last Name",
-        className: "input-half"
-      }))), _react.default.createElement("div", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+        className: "input-full"
+      }), _react.default.createElement("label", null, "Last Name"), _react.default.createElement("input", {
         type: "email",
         placeholder: "Email Address",
         className: "input-full"
-      }))), _react.default.createElement("div", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+      }), _react.default.createElement("label", null, "Email"), _react.default.createElement("input", {
         type: "password",
         placeholder: "Password",
         className: "input-full"
-      }))), _react.default.createElement("button", {
+      }), _react.default.createElement("label", null, "Password"), _react.default.createElement("button", {
         className: "Register-btn"
       }, "Register")))));
     }
@@ -35654,7 +35652,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43633" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38663" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
