@@ -24,7 +24,7 @@ export default function Header() {
             </li>
             <li className="nav-item">
               <Link to="cart">
-                Cart <i class="fa fa-cart-arrow-down"></i>
+                Cart <i className="fa fa-cart-arrow-down"></i>
               </Link>
             </li>
           </ul>
