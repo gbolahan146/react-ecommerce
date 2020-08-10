@@ -32683,7 +32683,78 @@ function Landing() {
     id: "caption"
   }))))));
 }
-},{"react":"../node_modules/react/index.js","../components/Header":"components/Header.js","../components/Footer":"components/Footer.js","../../assets/img/cakes/birthday/birthday.jpg":"../assets/img/cakes/birthday/birthday.jpg","../../assets/img/cakes/birthday/birthday1.jpg":"../assets/img/cakes/birthday/birthday1.jpg","../../assets/img/cakes/birthday/birthday2.jpg":"../assets/img/cakes/birthday/birthday2.jpg","../../assets/img/cakes/birthday/birthday3.jpg":"../assets/img/cakes/birthday/birthday3.jpg","../../assets/img/cakes/birthday/birthday4.jpg":"../assets/img/cakes/birthday/birthday4.jpg","../../assets/img/cakes/birthday/birthday5.jpg":"../assets/img/cakes/birthday/birthday5.jpg","../../assets/img/flat-cake.jpg":"../assets/img/flat-cake.jpg","../../assets/img/cakes/cup/cup.jpg":"../assets/img/cakes/cup/cup.jpg","../../assets/img/cakes/cup/cup1.jpg":"../assets/img/cakes/cup/cup1.jpg","../../assets/img/cakes/cup/cup2.jpg":"../assets/img/cakes/cup/cup2.jpg","../../assets/img/cakes/cup/cup3.jpg":"../assets/img/cakes/cup/cup3.jpg","../../assets/img/cakes/cup/cup4.jpg":"../assets/img/cakes/cup/cup4.jpg","../../assets/img/other1.jpg":"../assets/img/other1.jpg"}],"pages/Signin-page.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../components/Header":"components/Header.js","../components/Footer":"components/Footer.js","../../assets/img/cakes/birthday/birthday.jpg":"../assets/img/cakes/birthday/birthday.jpg","../../assets/img/cakes/birthday/birthday1.jpg":"../assets/img/cakes/birthday/birthday1.jpg","../../assets/img/cakes/birthday/birthday2.jpg":"../assets/img/cakes/birthday/birthday2.jpg","../../assets/img/cakes/birthday/birthday3.jpg":"../assets/img/cakes/birthday/birthday3.jpg","../../assets/img/cakes/birthday/birthday4.jpg":"../assets/img/cakes/birthday/birthday4.jpg","../../assets/img/cakes/birthday/birthday5.jpg":"../assets/img/cakes/birthday/birthday5.jpg","../../assets/img/flat-cake.jpg":"../assets/img/flat-cake.jpg","../../assets/img/cakes/cup/cup.jpg":"../assets/img/cakes/cup/cup.jpg","../../assets/img/cakes/cup/cup1.jpg":"../assets/img/cakes/cup/cup1.jpg","../../assets/img/cakes/cup/cup2.jpg":"../assets/img/cakes/cup/cup2.jpg","../../assets/img/cakes/cup/cup3.jpg":"../assets/img/cakes/cup/cup3.jpg","../../assets/img/cakes/cup/cup4.jpg":"../assets/img/cakes/cup/cup4.jpg","../../assets/img/other1.jpg":"../assets/img/other1.jpg"}],"components/Form.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Form = function Form(_ref) {
+  var children = _ref.children;
+  return _react.default.createElement("div", null, _react.default.createElement("form", {
+    className: "form"
+  }, children));
+};
+
+var _default = Form;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"components/FormInput.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var FormInput = function FormInput(_ref) {
+  var type = _ref.type,
+      placeholder = _ref.placeholder,
+      label = _ref.label;
+  return _react.default.createElement("div", {
+    className: "form-group"
+  }, _react.default.createElement("input", {
+    className: "form-input",
+    type: type,
+    placeholder: placeholder
+  }), label ? _react.default.createElement("label", null, label) : null);
+};
+
+var _default = FormInput;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"components/Button.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Button = function Button(_ref) {
+  var type = _ref.type,
+      placeholder = _ref.placeholder;
+  return _react.default.createElement("div", null, _react.default.createElement("button", {
+    className: "btn",
+    type: type
+  }, placeholder));
+};
+
+var _default = Button;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"pages/Signin-page.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32694,6 +32765,14 @@ exports.default = void 0;
 var _react = _interopRequireWildcard(require("react"));
 
 var _reactRouterDom = require("react-router-dom");
+
+var _Form = _interopRequireDefault(require("../components/Form"));
+
+var _FormInput = _interopRequireDefault(require("../components/FormInput"));
+
+var _Button = _interopRequireDefault(require("../components/Button"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
@@ -32749,23 +32828,22 @@ var Login = /*#__PURE__*/function (_Component) {
         className: "Register-heading"
       }, "Sign In"), _react.default.createElement("h5", {
         className: "Register-subtext"
-      }, "Not into cake yet? ", _react.default.createElement("span", null, "Get In!")), _react.default.createElement("form", {
-        className: "Reg-form Login-form"
-      }, _react.default.createElement("div", null, _react.default.createElement("input", {
+      }, "Not into cake yet? ", _react.default.createElement("span", null, "Get In!")), _react.default.createElement(_Form.default, null, _react.default.createElement(_FormInput.default, {
         type: "email",
-        placeholder: "Email Address",
-        className: "input-full"
-      }), _react.default.createElement("label", null, "Email")), _react.default.createElement("div", null, _react.default.createElement("input", {
+        placeholder: "Email",
+        label: "Email"
+      }), _react.default.createElement(_FormInput.default, {
         type: "password",
         placeholder: "Password",
-        className: "input-full"
-      }), _react.default.createElement("label", null, "Password")), _react.default.createElement("button", {
-        className: "Register-btn"
-      }, "Login"), _react.default.createElement("h5", {
-        className: "Register-subtext"
+        label: "Password"
+      }), _react.default.createElement(_Button.default, {
+        type: "submit",
+        placeholder: "Sign In"
+      }), _react.default.createElement("h5", {
+        className: "cta-text"
       }, "Don't have an account yet?", _react.default.createElement(_reactRouterDom.Link, {
         to: "/register"
-      }, " Sign Up! "), _react.default.createElement("span", null))))));
+      }, " Sign Up! "))))));
     }
   }]);
 
@@ -32774,6 +32852,7 @@ var Login = /*#__PURE__*/function (_Component) {
 
 var _default = Login;
 exports.default = _default;
+<<<<<<< HEAD
 },{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"../node_modules/tslib/tslib.es6.js":[function(require,module,exports) {
 "use strict";
 
@@ -57757,6 +57836,9 @@ exports.firestore = firestore;
 var _default = _app.default;
 exports.default = _default;
 },{"firebase/app":"../node_modules/firebase/app/dist/index.cjs.js","firebase/auth":"../node_modules/firebase/auth/dist/index.esm.js","firebase/firestore":"../node_modules/firebase/firestore/dist/index.esm.js"}],"pages/Register-page.js":[function(require,module,exports) {
+=======
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../components/Form":"components/Form.js","../components/FormInput":"components/FormInput.js","../components/Button":"components/Button.js"}],"pages/Register-page.js":[function(require,module,exports) {
+>>>>>>> upstream/master
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -57768,7 +57850,17 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _reactRouterDom = require("react-router-dom");
 
+<<<<<<< HEAD
 var _utils = require("../Firebase/utils");
+=======
+var _Form = _interopRequireDefault(require("../components/Form"));
+
+var _FormInput = _interopRequireDefault(require("../components/FormInput"));
+
+var _Button = _interopRequireDefault(require("../components/Button"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+>>>>>>> upstream/master
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
@@ -57849,6 +57941,7 @@ var Register = /*#__PURE__*/function (_Component) {
         className: "Register-subtext"
       }, "Already registered?", ' ', _react.default.createElement("span", null, _react.default.createElement(_reactRouterDom.Link, {
         to: "/signin"
+<<<<<<< HEAD
       }, " Sign in!"))), _react.default.createElement("form", {
         onSubmit: this.handleSubmit,
         className: "Reg-form Reg-form-h"
@@ -57884,6 +57977,32 @@ var Register = /*#__PURE__*/function (_Component) {
       }))), _react.default.createElement("button", {
         className: "Register-btn"
       }, "Register")))));
+=======
+      }, " Sign in!"))), _react.default.createElement(_Form.default, null, _react.default.createElement(_FormInput.default, {
+        type: "text",
+        placeholder: "First Name",
+        label: "First Name"
+      }), _react.default.createElement(_FormInput.default, {
+        type: "text",
+        placeholder: "Last Name",
+        label: "Last Name"
+      }), _react.default.createElement(_FormInput.default, {
+        type: "email",
+        placeholder: "Email",
+        label: "Email"
+      }), _react.default.createElement(_FormInput.default, {
+        type: "password",
+        placeholder: "Password",
+        label: "Password"
+      }), _react.default.createElement(_FormInput.default, {
+        type: "password",
+        placeholder: "Confirm Password",
+        label: "Confirm Password"
+      }), _react.default.createElement(_Button.default, {
+        type: "submit",
+        placeholder: "Sign Up"
+      })))));
+>>>>>>> upstream/master
     }
   }]);
 
@@ -57892,7 +58011,11 @@ var Register = /*#__PURE__*/function (_Component) {
 
 var _default = Register;
 exports.default = _default;
+<<<<<<< HEAD
 },{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../Firebase/utils":"Firebase/utils.js"}],"../assets/img/other.jpg":[function(require,module,exports) {
+=======
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../components/Form":"components/Form.js","../components/FormInput":"components/FormInput.js","../components/Button":"components/Button.js"}],"../assets/img/other.jpg":[function(require,module,exports) {
+>>>>>>> upstream/master
 module.exports = "/other.b33c2b8b.jpg";
 },{}],"../assets/img/other3.jpg":[function(require,module,exports) {
 module.exports = "/other3.dee78b88.jpg";
@@ -60739,7 +60862,11 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
+<<<<<<< HEAD
   var ws = new WebSocket(protocol + '://' + hostname + ':' + "49491" + '/');
+=======
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45103" + '/');
+>>>>>>> upstream/master
 
   ws.onmessage = function (event) {
     checkedAssets = {};
