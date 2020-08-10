@@ -32582,6 +32582,7 @@ var _other = _interopRequireDefault(require("../../assets/img/other1.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// import {birthdayCake, cupCake} from '../components/Images'
 function Landing() {
   return _react.default.createElement("div", {
     className: "landing"
@@ -33066,85 +33067,221 @@ var CartCheckoutPage = function CartCheckoutPage() {
 
 var _default = CartCheckoutPage;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"components/Images.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js"}],"../assets/img/cakes/wedding/wedding1.jpg":[function(require,module,exports) {
+module.exports = "/wedding1.fff99756.jpg";
+},{}],"../assets/img/cakes/wedding/wedding2.jpg":[function(require,module,exports) {
+module.exports = "/wedding2.c0313442.jpg";
+},{}],"../assets/img/cakes/wedding/wedding3.jpg":[function(require,module,exports) {
+module.exports = "/wedding3.7edeedab.jpg";
+},{}],"../assets/img/cakes/wedding/wedding4.jpg":[function(require,module,exports) {
+module.exports = "/wedding4.dccc95ad.jpg";
+},{}],"../assets/img/cakes/wedding/wedding5.jpg":[function(require,module,exports) {
+module.exports = "/wedding5.847de1d2.jpg";
+},{}],"../assets/img/cakes/wedding/wedding6.jpg":[function(require,module,exports) {
+module.exports = "/wedding6.190606d5.jpg";
+},{}],"components/Images.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports.weddingCake = exports.cupCake = exports.birthdayCake = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _birthday = _interopRequireDefault(require("../../assets/img/cakes/birthday/birthday.jpg"));
 
-var _birthday = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday.jpg"));
+var _birthday2 = _interopRequireDefault(require("../../assets/img/cakes/birthday/birthday1.jpg"));
+
+var _birthday3 = _interopRequireDefault(require("../../assets/img/cakes/birthday/birthday2.jpg"));
+
+var _birthday4 = _interopRequireDefault(require("../../assets/img/cakes/birthday/birthday3.jpg"));
+
+var _birthday5 = _interopRequireDefault(require("../../assets/img/cakes/birthday/birthday4.jpg"));
+
+var _cup = _interopRequireDefault(require("../../assets/img/cakes/cup/cup.jpg"));
+
+var _cup2 = _interopRequireDefault(require("../../assets/img/cakes/cup/cup1.jpg"));
+
+var _cup3 = _interopRequireDefault(require("../../assets/img/cakes/cup/cup2.jpg"));
+
+var _cup4 = _interopRequireDefault(require("../../assets/img/cakes/cup/cup3.jpg"));
+
+var _cup5 = _interopRequireDefault(require("../../assets/img/cakes/cup/cup4.jpg"));
+
+var _wedding2 = _interopRequireDefault(require("../../assets/img/cakes/wedding/wedding1.jpg"));
+
+var _wedding3 = _interopRequireDefault(require("../../assets/img/cakes/wedding/wedding2.jpg"));
+
+var _wedding4 = _interopRequireDefault(require("../../assets/img/cakes/wedding/wedding3.jpg"));
+
+var _wedding5 = _interopRequireDefault(require("../../assets/img/cakes/wedding/wedding4.jpg"));
+
+var _wedding6 = _interopRequireDefault(require("../../assets/img/cakes/wedding/wedding5.jpg"));
+
+var _wedding7 = _interopRequireDefault(require("../../assets/img/cakes/wedding/wedding6.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import birthday1 from './../../assets/img/cakes/birthday/birthday1.jpg';
-// import birthday2 from './../../assets/img/cakes/birthday/birthday2.jpg';
-// import birthday3 from './../../assets/img/cakes/birthday/birthday3.jpg';
-// import birthday4 from './../../assets/img/cakes/birthday/birthday4.jpg';
-var Images = [[{
-  id: 1,
-  src: './../../assets/img/cakes/birthday/birthday.jpg'
-}, {
-  id: 2,
-  src: './../../assets/img/cakes/birthday/birthday2.jpg'
-}, {
-  id: 3,
-  src: './../../assets/img/cakes/birthday/birthday3.jpg'
-}, {
-  id: 4,
-  src: './../../assets/img/cakes/birthday/birthday4.jpg'
-}, {
-  id: 5,
-  src: './../../assets/img/cakes/birthday/birthday5.jpg'
-}], [{
-  id: 1,
-  src: './../../assets/img/cakes/cup/cup.jpg'
-}, {
-  id: 2,
-  src: './../../assets/img/cakes/cup/cup1.jpg'
-}, {
-  id: 3,
-  src: './../../assets/img/cakes/cup/cup3.jpg'
-}, {
-  id: 4,
-  src: './../../assets/img/cakes/cup/cup4.jpg'
-}], [{
-  id: 1,
-  src: './../../assets/img/other.jpg'
-}, {
-  id: 2,
-  src: './../../assets/img/other2.jpg'
-}, {
-  id: 3,
-  src: './../../assets/img/other3.jpg'
-}, {
-  id: 4,
-  src: './../../assets/img/flat-cake.jpg'
-}], [{
-  id: 1,
-  src: './../../assets/img/cakes/wedding/wedding.jpg'
-}, {
-  id: 2,
-  src: './../../assets/img/cakes/wedding/wedding2.jpg'
-}, {
-  id: 3,
-  src: './../../assets/img/cakes/wedding/wedding3.jpg'
-}, {
-  id: 4,
-  src: './../../assets/img/cakes/wedding/wedding4.jpg'
-}, {
-  id: 5,
-  src: './../../assets/img/cakes/wedding/wedding5.jpg'
-}, {
-  id: 6,
-  src: './../../assets/img/cakes/wedding/wedding6.jpg'
-}]];
-var _default = Images;
-exports.default = _default;
-},{"react":"../node_modules/react/index.js","./../../assets/img/cakes/birthday/birthday.jpg":"../assets/img/cakes/birthday/birthday.jpg"}],"components/App.js":[function(require,module,exports) {
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var birthdayCake = function birthdayCake() {
+  return {
+    zero: _birthday.default,
+    one: _birthday2.default,
+    two: _birthday3.default,
+    three: _birthday4.default,
+    four: _birthday5.default
+  };
+};
+
+exports.birthdayCake = birthdayCake;
+
+var cupCake = function cupCake() {
+  return {
+    zero: _cup.default,
+    one: _cup2.default,
+    two: _cup3.default,
+    three: _cup4.default,
+    four: _cup5.default
+  };
+};
+
+exports.cupCake = cupCake;
+
+var weddingCake = function weddingCake() {
+  return {
+    one: _wedding2.default,
+    two: _wedding3.default,
+    three: _wedding4.default,
+    four: _wedding5.default,
+    five: _wedding6.default,
+    six: _wedding7.default
+  };
+};
+
+exports.weddingCake = weddingCake;
+
+var Cake = function Cake() {
+  var _wedding;
+
+  return {
+    wedding: (_wedding = {
+      one: {
+        src: _wedding2.default,
+        name: "Raspberry cake",
+        price: "980"
+      },
+      two: {
+        src: _wedding3.default,
+        price: "560"
+      },
+      three: {
+        src: _wedding4.default,
+        price: "560"
+      }
+    }, _defineProperty(_wedding, "two", {
+      src: _wedding3.default,
+      price: "560"
+    }), _defineProperty(_wedding, "two", {
+      src: _wedding3.default,
+      price: "560"
+    }), _defineProperty(_wedding, "two", {
+      src: _wedding3.default,
+      price: "560"
+    }), _wedding),
+    birthday: {
+      one: {
+        src: _birthday2.default
+      }
+    }
+  };
+}; // const Images = [
+//   [
+//     {
+//       id: 1,
+//       src: './../../assets/img/cakes/birthday/birthday.jpg',
+//     },
+//     {
+//       id: 2,
+//       src: './../../assets/img/cakes/birthday/birthday2.jpg',
+//     },
+//     {
+//       id: 3,
+//       src: './../../assets/img/cakes/birthday/birthday3.jpg',
+//     },
+//     {
+//       id: 4,
+//       src: './../../assets/img/cakes/birthday/birthday4.jpg',
+//     },
+//     {
+//       id: 5,
+//       src: './../../assets/img/cakes/birthday/birthday5.jpg',
+//     },
+//   ],
+//   [
+//     {
+//       id: 1,
+//       src: './../../assets/img/cakes/cup/cup.jpg',
+//     },
+//     {
+//       id: 2,
+//       src: './../../assets/img/cakes/cup/cup1.jpg',
+//     },
+//     {
+//       id: 3,
+//       src: './../../assets/img/cakes/cup/cup3.jpg',
+//     },
+//     {
+//       id: 4,
+//       src: './../../assets/img/cakes/cup/cup4.jpg',
+//     },
+//   ],
+//   [
+//     {
+//       id: 1,
+//       src: './../../assets/img/other.jpg',
+//     },
+//     {
+//       id: 2,
+//       src: './../../assets/img/other2.jpg',
+//     },
+//     {
+//       id: 3,
+//       src: './../../assets/img/other3.jpg',
+//     },
+//     {
+//       id: 4,
+//       src: './../../assets/img/flat-cake.jpg',
+//     },
+//   ],
+//   [
+//     {
+//       id: 1,
+//       src: './../../assets/img/cakes/wedding/wedding.jpg',
+//     },
+//     {
+//       id: 2,
+//       src: './../../assets/img/cakes/wedding/wedding2.jpg',
+//     },
+//     {
+//       id: 3,
+//       src: './../../assets/img/cakes/wedding/wedding3.jpg',
+//     },
+//     {
+//       id: 4,
+//       src: './../../assets/img/cakes/wedding/wedding4.jpg',
+//     },
+//     {
+//       id: 5,
+//       src: './../../assets/img/cakes/wedding/wedding5.jpg',
+//     },
+//     {
+//       id: 6,
+//       src: './../../assets/img/cakes/wedding/wedding6.jpg',
+//     },
+//   ],
+// ];
+// export default Images;
+},{"../../assets/img/cakes/birthday/birthday.jpg":"../assets/img/cakes/birthday/birthday.jpg","../../assets/img/cakes/birthday/birthday1.jpg":"../assets/img/cakes/birthday/birthday1.jpg","../../assets/img/cakes/birthday/birthday2.jpg":"../assets/img/cakes/birthday/birthday2.jpg","../../assets/img/cakes/birthday/birthday3.jpg":"../assets/img/cakes/birthday/birthday3.jpg","../../assets/img/cakes/birthday/birthday4.jpg":"../assets/img/cakes/birthday/birthday4.jpg","../../assets/img/cakes/cup/cup.jpg":"../assets/img/cakes/cup/cup.jpg","../../assets/img/cakes/cup/cup1.jpg":"../assets/img/cakes/cup/cup1.jpg","../../assets/img/cakes/cup/cup2.jpg":"../assets/img/cakes/cup/cup2.jpg","../../assets/img/cakes/cup/cup3.jpg":"../assets/img/cakes/cup/cup3.jpg","../../assets/img/cakes/cup/cup4.jpg":"../assets/img/cakes/cup/cup4.jpg","../../assets/img/cakes/wedding/wedding1.jpg":"../assets/img/cakes/wedding/wedding1.jpg","../../assets/img/cakes/wedding/wedding2.jpg":"../assets/img/cakes/wedding/wedding2.jpg","../../assets/img/cakes/wedding/wedding3.jpg":"../assets/img/cakes/wedding/wedding3.jpg","../../assets/img/cakes/wedding/wedding4.jpg":"../assets/img/cakes/wedding/wedding4.jpg","../../assets/img/cakes/wedding/wedding5.jpg":"../assets/img/cakes/wedding/wedding5.jpg","../../assets/img/cakes/wedding/wedding6.jpg":"../assets/img/cakes/wedding/wedding6.jpg"}],"components/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35718,7 +35855,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36047" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43015" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
