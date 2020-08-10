@@ -580,7 +580,7 @@ img.product {
         font-weight: normal;
         color: #6a7e8a;
         transform: translateX(20px) translateY(3px);
-        transition: all .5s; }
+        transition: all 0.5s; }
       .Register .Register-form .Reg-form .Register-btn {
         margin-top: 32px;
         background-color: rgba(255, 0, 102, 0.8);
@@ -593,7 +593,7 @@ img.product {
         float: right;
         border: none;
         cursor: pointer;
-        transition: all .3S; }
+        transition: all 0.3s; }
         .Register .Register-form .Reg-form .Register-btn:hover {
           background-color: #ff0066; }
         .Register .Register-form .Reg-form .Register-btn:active {
