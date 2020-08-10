@@ -32836,7 +32836,7 @@ var Register = /*#__PURE__*/function (_Component) {
         className: "Register-heading"
       }, "Create an account with us"), _react.default.createElement("h5", {
         className: "Register-subtext"
-      }, "Already registered? ", _react.default.createElement("span", null, _react.default.createElement(_reactRouterDom.Link, {
+      }, "Already registered?", ' ', _react.default.createElement("span", null, _react.default.createElement(_reactRouterDom.Link, {
         to: "/signin"
       }, " Sign in!"))), _react.default.createElement("form", {
         className: "Reg-form Reg-form-h"
@@ -32889,20 +32889,20 @@ var AboutUsPage = function AboutUsPage() {
   return _react.default.createElement("div", null, _react.default.createElement("div", {
     style: {
       height: 250,
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
       backgroundImage: "url(".concat(_td.default, ")")
     }
   }, "about us"), _react.default.createElement("div", {
     style: {
-      display: "flex"
+      display: 'flex'
     }
   }, _react.default.createElement("aside", {
     style: {
-      width: "65%"
+      width: '65%'
     }
   }, _react.default.createElement("div", null, _react.default.createElement("h1", null, "Who are we?"), _react.default.createElement("div", null, _react.default.createElement("p", null, "The \"Cake Shop\" is a Jordanian Brand that started as a small family business."), _react.default.createElement("p", null, "The owners are Dr. Iyad Sultan and Dr. Sereen Sharabati, supported by a staff of 80 employees."), _react.default.createElement("p", null, "Although not small any more, the business tries to keep the family atmosphere where we care not only about our company, our products and our staff, but also we consider each \"customer\" a member in this family of \"cake shoppers\"."), _react.default.createElement("p", null, "Our mission is to make people happy. Making delicious cakes, having relaxing chairs in a smoking free environment and keeping our prices reasonable are all different ways to achieve this goal.")))), _react.default.createElement("main", null, _react.default.createElement("div", null, "something goes here"))));
 };
@@ -32927,47 +32927,47 @@ var ContactPage = function ContactPage() {
   return _react.default.createElement("div", null, _react.default.createElement("div", {
     style: {
       height: 250,
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
       backgroundImage: "url(".concat(_td.default, ")")
     }
   }, "contact us"), _react.default.createElement("div", {
     style: {
-      display: "flex"
+      display: 'flex'
     }
   }, _react.default.createElement("aside", {
     style: {
-      width: "65%"
+      width: '65%'
     }
   }, _react.default.createElement("div", null, _react.default.createElement("h1", null, "Contact Form"), _react.default.createElement("div", {
     style: {
-      display: "flex",
-      flexDirection: "column"
+      display: 'flex',
+      flexDirection: 'column'
     }
   }, _react.default.createElement("input", {
     style: {
-      border: "1px solid black"
+      border: '1px solid black'
     },
     type: "text",
     placeholder: "Name *"
   }), _react.default.createElement("input", {
     style: {
-      border: "1px solid black"
+      border: '1px solid black'
     },
     type: "text",
     placeholder: "Email *"
   }), _react.default.createElement("input", {
     style: {
-      border: "1px solid black"
+      border: '1px solid black'
     },
     type: "text",
     placeholder: "Subject *"
   }), _react.default.createElement("textarea", {
     style: {
-      border: "1px solid black"
+      border: '1px solid black'
     },
     rows: "15",
     placeholder: "Message *"
@@ -33148,7 +33148,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\..\\assets\\img\\cakes\\cup\\cup.jpg":[["cup.39370689.jpg","../assets/img/cakes/cup/cup.jpg"],"../assets/img/cakes/cup/cup.jpg"],"./..\\..\\assets\\img\\cakes\\cup\\cup2.jpg":[["cup2.4ecb9088.jpg","../assets/img/cakes/cup/cup2.jpg"],"../assets/img/cakes/cup/cup2.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/symbol-observable/es/ponyfill.js":[function(require,module,exports) {
+},{"./../../assets/img/cakes/cup/cup.jpg":[["cup.39370689.jpg","../assets/img/cakes/cup/cup.jpg"],"../assets/img/cakes/cup/cup.jpg"],"./../../assets/img/cakes/cup/cup2.jpg":[["cup2.4ecb9088.jpg","../assets/img/cakes/cup/cup2.jpg"],"../assets/img/cakes/cup/cup2.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/symbol-observable/es/ponyfill.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35650,7 +35650,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60529" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45747" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
