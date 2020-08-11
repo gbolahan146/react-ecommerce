@@ -1,77 +1,77 @@
 @import '../../variables.scss';
+
 .Register {
-  display: flex;
-  height: 660px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: .5rem; // 1rem == 16px(default html font size if not manually changed)
 
-  & .Register-image-prop {
-    width: 50%;
-    height: 100%;
-    position: relative;
-  }
+  background: linear-gradient(rgba(#000, .25), rgba(#000, .2)),
+    url('../../assets/img/cakes/cup/cup3.jpg') center no-repeat;
+  background-size: cover;
+  background-position: top;
 
-  .Register-image {
-    background: url('../../assets/img/cakes/cup/cup.jpg') center no-repeat;
-    background-size: cover;
-  }
+  color: rgba(#fff, 1.0);
 
-  .Login-image {
-    background: url('../../assets/img/cakes/cup/cup2.jpg') center no-repeat;
-    background-size: cover;
-  }
-
-  .Register-image-overlay {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    position: absolute;
-    padding-bottom: 23px;
-    top: 0;
-    left: 0;
+  &-image {
+    grid-column: 1/2;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     p {
-      z-index: 88;
-      color: #fff;
-      font-size: 23px;
+      display: block;
+      font-size: 1.5rem;
       font-weight: 500;
-      text-align: center;
     }
   }
 
-  .Register-form-lyt {
-    width: 50%;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  &-form {
+    padding: 2.5rem;
 
-  .Register-form {
-    width: 520px;
-
-    .Register-heading {
-      font-size: 28px;
+    h3 {
       font-weight: 500;
-      color: $primary;
+      font-size: 1.5rem;
+      margin: 0;
     }
 
-    .Register-subtext {
-      font-size: 16px;
-      font-weight: normal;
-      color: #6a7e8a;
-      margin-top: 8px;
+    p {
+      margin-top: 0;
 
-      span {
-        color: $primary;
+      a,
+      a:link,
+      a:visited {
+        padding: .2rem;
+        text-decoration: none;
+        color: currentColor;
+        position: relative;
+
+        &::after {
+          display: block;
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 2px;
+          width: 100%;
+          background-color: $pinkish;
+
+          transition: all .5s;
+        }
+
+        &:hover {
+          z-index: 10;
+
+          &::after {
+            height: 100%;
+            z-index: -1;
+          }
+        }
       }
     }
   }
-}
-
-.cta-text {
-  display: block;
-  margin-top: 25px;
 }
