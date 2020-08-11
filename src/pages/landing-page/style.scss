@@ -5,19 +5,23 @@
   margin: 0 auto;
   padding: 50px 0;
 }
+
 button:hover,
 button:focus {
   cursor: pointer;
   outline: none;
 }
+
 .call-to-action {
   width: 100%;
   max-width: 1200px;
   margin: auto;
 }
+
 .call-buttons {
   margin-left: 20px;
 }
+
 .call-buttons button {
   background-color: white;
   border: 1px solid black;
@@ -25,6 +29,7 @@ button:focus {
   border-radius: 9px;
   margin-left: 10px;
 }
+
 .call-buttons button:hover,
 .call-buttons button:focus {
   background-color: $pinkish;
@@ -32,12 +37,14 @@ button:focus {
   color: white;
   transition: all 0.7s ease-in-out;
 }
+
 .call-products {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 10px;
 }
+
 .call-products figure {
   border: 1px solid black;
   padding: 7px;
@@ -46,19 +53,23 @@ button:focus {
   box-shadow: 2px 3px 9px #7d747b;
   transition: transform 0.5s;
 }
+
 .call-products figure:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
+
 .call-products figcaption {
   padding: 8px 16px;
   text-align: center;
   background-color: rgb(240, 238, 238);
 }
+
 .call-products figcaption p {
   padding: 3px 0px;
   font-weight: bolder;
 }
+
 .call-products figcaption button {
   padding: 5px 10px;
   border: 1px solid $pinkish;
@@ -66,11 +77,13 @@ button:focus {
   color: white;
   background-color: $pinkish;
 }
+
 .call-products figcaption button:hover {
   background-color: white;
   color: $pinkish;
   transition: all 0.7s ease;
 }
+
 img.product {
   height: 310px;
   width: 250px;
@@ -79,18 +92,28 @@ img.product {
 }
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
 }
+
 .modal-content {
   margin: auto;
   display: block;
@@ -98,19 +121,23 @@ img.product {
   max-width: 700px;
   height: inherit;
 }
+
 .modal-content,
 #caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
+
 @keyframes zoom {
   from {
     transform: scale(0);
   }
+
   to {
     transform: scale(1);
   }
 }
+
 .close {
   position: absolute;
   top: 15px;
@@ -133,4 +160,61 @@ img.product {
   .modal-content {
     width: 100%;
   }
+}
+
+
+
+/*
+.header-intro {
+  display: flex;
+  justify-content: space-around;
+  background: $bg-primary;
+}
+
+.text-cta {
+  width: 550px;
+  height: 260px;
+  margin-top: 12%;
+
+  & h2 {
+    font-size: 39px;
+  }
+
+  & p {
+    font-size: 18px;
+    margin-top: 3%;
+  }
+}
+
+.img-intro {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+.image-cta {
+  height: 580px;
+  width: 580px;
+  border: 3px solid $pinkish;
+  border-radius: 50%;
+  padding: 35px;
+  margin-top: 2%;
+}
+
+// header section ends here
+*/
+.header {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(#fff, .5), rgba(#fff, .5)),
+    url(../../assets/img/hero/hero4.jpg);
+  background-position: center;
+  background-size: cover;
+
+  // clip-path: polygon();
+
+  &-text {}
 }
