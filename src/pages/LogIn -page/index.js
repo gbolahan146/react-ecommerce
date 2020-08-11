@@ -67,7 +67,10 @@ class Login extends Component {
               name="password"
               value={password}
               onChange={this.handleChange} />
-            <Button type='submit' placeholder='Sign In' />
+              <div style={{display: "flex"}}>
+                <Button type='submit' placeholder='Sign In' />
+                <Button google type='submit' placeholder='Sign In With Google' />
+              </div>
           </Form>
           <h4 className='cta-text'>
             Don't have an account yet?<Link to='/register'> Sign Up! </Link>

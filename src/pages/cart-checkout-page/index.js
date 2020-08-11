@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
 import './style.scss'
+import CheckoutItem from '../../components/CheckoutItem/CheckoutItem';
 
-const CartCheckoutPage = () => {
+const CartCheckoutPage = (props) => {
+  const { cartItems, cartTotalPrice } = props;
   return (
     <div className='container'>
       <div className='wrapper'>
@@ -11,84 +14,20 @@ const CartCheckoutPage = () => {
             <h3>Shopping Cart</h3>
           </div>
           <div className='cart-wrapper'>
-            <div className='cart-item'>
-              <div className='for-picture'>
-                
-              </div>
-              <div>
-                Name of Item
-              </div>
-              <div className='the-quantity'>
-                <span className='mod-item'> - </span> <span className='quantity'> 5 </span> <span  className='mod-item'> + </span>
-              </div>
-              <div className='price'>
-                $10.50
-              </div>
-              <div className='mod-item cancel'>
-                x
-              </div>
-            </div>
-            <div className='cart-item'>
-              <div className='for-picture'>
-                
-              </div>
-              <div>
-                Name of Item
-              </div>
-              <div className='the-quantity'>
-                <span> - </span> <span className='quantity'> 5 </span> <span> + </span>
-              </div>
-              <div className='price'>
-                $10.50
-              </div>
-              <div>
-                x
-              </div>
-            </div>
-
-            <div className='cart-item'>
-              <div className='for-picture'>
-                
-              </div>
-              <div>
-                Name of Item
-              </div>
-              <div className='the-quantity'>
-                <span> - </span> <span className='quantity'> 5 </span> <span> + </span>
-              </div>
-              <div className='price'>
-                $10.50
-              </div>
-              <div>
-                x
-              </div>
-            </div>
-
-            <div className='cart-item'>
-              <div className='for-picture'>
-                
-              </div>
-              <div>
-                Name of Item
-              </div>
-              <div className='the-quantity'>
-                <span> - </span> <span className='quantity'> 5 </span> <span> + </span>
-              </div>
-              <div className='price'>
-                $10.50
-              </div>
-              <div>
-                x
-              </div>
-            </div>
-
+          { cartItems.length ?
+            cartItems.map(cartItem => {
+              return <CheckoutItem key={cartItem.id} cartItem={cartItem} />
+            })
+            :
+            <div style={{textAlign: "center"}}>Your cart is empty xx</div>
+          }
           </div>       
           <div className='total'>
             <div>
               <Link className='goback' to = './products'> &larr; Continue Shopping</Link>
             </div>
             <div>
-              <span style={{color: "#8d8f97"}}>Subtotal: </span>$24.90 
+              <span style={{color: "#8d8f97"}}>Subtotal: </span>${cartTotalPrice}.00
             </div>
 
           </div>
@@ -172,4 +111,11 @@ const CartCheckoutPage = () => {
   )
 };
 
-export default CartCheckoutPage;
+const mapStateToProps = state => {
+  return {
+    cartItems: state.japacart.cartItems,
+    cartTotalPrice: state.japacart.cartItems.reduce((acc, arr) => acc + (arr.quantity * arr.price.substring(1)), 0)
+  }
+}
+
+export default connect(mapStateToProps)(CartCheckoutPage);
