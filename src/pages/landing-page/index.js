@@ -7,7 +7,7 @@ import birthday2 from '../../assets/img/cakes/birthday/birthday2.jpg';
 import birthday3 from '../../assets/img/cakes/birthday/birthday3.jpg';
 //import birthday4 from '../../assets/img/cakes/birthday/birthday4.jpg';
 import birthday5 from '../../assets/img/cakes/birthday/birthday5.jpg';
-import flat from '../../assets/img/flat-cake.jpg';
+//import flat from '../../assets/img/flat-cake.jpg';
 
 import cup from '../../assets/img/cakes/cup/cup.jpg';
 import cup1 from '../../assets/img/cakes/cup/cup1.jpg';

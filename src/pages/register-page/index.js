@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Form from '../../components/form/index';
 import FormInput from '../../components/formInput/index';
 import Button from '../../components/button';
-//import { auth } from '../../firebase/utils';
+import { auth, createUserProfile } from '../../firebase/utils';
 
 
 class Register extends Component {
@@ -25,6 +25,26 @@ class Register extends Component {
 
   handleSubmit = async (event) => {
     event.preventDefault();
+    const { firstName, email, password, confirmPassword } = this.state;
+    if (password !== confirmPassword) {
+      alert('passwords are not equal');
+    } else {
+      try {
+        const user = await auth.createUserWithEmailAndPassword(email, password);
+        await createUserProfile(user, { firstName })
+
+
+        this.setState({
+          firstName: '',
+          lastName: '',
+          email: '',
+          password: '',
+          confirmPassword: ''
+        })
+      } catch (error) {
+        alert(error.message);
+      }
+    }
 
   };
   handleChange = event => {
@@ -81,4 +101,4 @@ class Register extends Component {
   }
 }
 
-export default Register;
+export default Register
