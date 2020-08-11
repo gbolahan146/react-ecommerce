@@ -1,10 +1,11 @@
 import React from 'react';
+import './style.scss';
 
-const FormInput = ({ type, placeholder, label }) => (
-    <div className="form-group">
-        <input className="form-input" type={type} placeholder={placeholder} />
-        {label ? <label>{label}</label> : null}
-    </div>
+const FormInput = ({ label, ...others }) => (
+  <div className='form-group'>
+    <input className='form-input' {...others} />
+    {label ? <label>{label}</label> : null}
+  </div>
 );
 
 export default FormInput;
