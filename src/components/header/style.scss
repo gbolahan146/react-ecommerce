@@ -6,8 +6,8 @@
 
   position: absolute;
   top: 0;
-  left: 5rem;
   z-index: 1000;
+  width: 100%;
 }
 
 header {
@@ -53,7 +53,9 @@ nav ul li a {
 
 .signOut-btn {
   border: 0;
-  background-color: none;
+  background: transparent;
+  // background-color: none;
+  margin-left: 20px;
   &:hover {
     text-decoration: underline;
     transition: all 0.5s ease;
