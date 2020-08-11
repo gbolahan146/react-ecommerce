@@ -1,0 +1,21 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $pinkish;
+  border-radius: 5px;
+}
