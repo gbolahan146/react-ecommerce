@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-// import {birthdayCake, cupCake} from '../components/Images'
 
 import birthday from '../../assets/img/cakes/birthday/birthday.jpg';
 import birthday1 from '../../assets/img/cakes/birthday/birthday1.jpg';
