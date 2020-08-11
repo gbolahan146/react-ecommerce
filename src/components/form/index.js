@@ -1,9 +1,9 @@
 import React from 'react';
 import './style.scss';
 
-const Form = ({ children }) => (
+const Form = (props) => (
   <div>
-    <form className='form'>{children}</form>
+    <form onSubmit={props.onSubmit} className='form'>{props.children}</form>
   </div>
 );
 
