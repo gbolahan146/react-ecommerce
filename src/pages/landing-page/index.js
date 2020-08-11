@@ -17,6 +17,9 @@ import cup3 from '../../assets/img/cakes/cup/cup3.jpg';
 
 import other1 from '../../assets/img/other1.jpg';
 
+//animation 
+import Zoom from 'react-reveal/Zoom';
+
 const LandingPage = () => {
   return (
     <div className='landing'>
@@ -41,87 +44,93 @@ const LandingPage = () => {
             <button>Cup cake</button>
             <button>Chocolate</button>
           </div>
+          <Zoom>
+            <div className='action call-products'>
 
-          <div className='action call-products'>
-            <figure>
-              <img src={birthday2} className='product' alt='' />
-              <figcaption>
-                <p className='name'>Raspberry cake</p>
-                <p className='price'>$980</p>
-                <button>Place your order</button>
-              </figcaption>
-            </figure>
-            <figure>
-              <img src={cup} className='product' alt='' />
-              <figcaption>
-                <p className='name'>Strawberry</p>
-                <p className='price'>$560</p>
-                <button>Place your order</button>
-              </figcaption>
-            </figure>
-            <figure>
-              <img src={birthday5} className='product' alt='' />
-              <figcaption>
-                <p className='name'>Cookie cake</p>
-                <p className='price'>$899</p>
-                <button>Place your order</button>
-              </figcaption>
-            </figure>
-            <figure>
-              <img src={birthday} className='product' alt='' />
-              <figcaption>
-                <p className='name'>Choco creme</p>
-                <p className='price'>$700</p>
-                <button>Place your order</button>
-              </figcaption>
-            </figure>
-            <figure>
-              <img src={cup1} className='product' alt='' />
-              <figcaption>
-                <p className='name'>Lemon cupcake</p>
-                <p className='price'>$50</p>
-                <button>Place your order</button>
-              </figcaption>
-            </figure>
-            <figure>
-              <img src={birthday3} className='product' alt='' />
-              <figcaption>
-                <p className='name'>Strawberry creme</p>
-                <p className='price'>$399</p>
-                <button>Place your order</button>
-              </figcaption>
-            </figure>
-            <figure>
-              <img src={cup3} className='product' alt='' />
-              <figcaption>
-                <p className='name'>3-layer cupcake</p>
-                <p className='price'>$90</p>
-                <button>Place your order</button>
-              </figcaption>
-            </figure>
-            <figure>
-              <img src={other1} className='product' alt='' />
-              <figcaption>
-                <p className='name'>Chocolate cake</p>
-                <p className='price'>$1000</p>
-                <button>Place your order</button>
-              </figcaption>
-            </figure>
+              <figure>
+                <img src={birthday2} className='product' alt='' />
+                <figcaption>
+                  <p className='name'>Raspberry cake</p>
+                  <p className='price'>$980</p>
+                  <button>Place your order</button>
+                </figcaption>
+              </figure>
 
-            {/* The Modal */}
-            <div id='myModal' className='modal'>
-              {/* The Close Button */}
-              <span className='close'>&times;</span>
+              <figure>
+                <img src={cup} className='product' alt='' />
+                <figcaption>
+                  <p className='name'>Strawberry</p>
+                  <p className='price'>$560</p>
+                  <button>Place your order</button>
+                </figcaption>
+              </figure>
 
-              {/* Modal Content (The Image) */}
-              <img className='modal-content' id='img01' alt='' />
+              <figure>
+                <img src={birthday5} className='product' alt='' />
+                <figcaption>
+                  <p className='name'>Cookie cake</p>
+                  <p className='price'>$899</p>
+                  <button>Place your order</button>
+                </figcaption>
+              </figure>
 
-              {/* Modal Caption (Image Text) */}
-              <div id='caption'></div>
+              <figure>
+                <img src={birthday} className='product' alt='' />
+                <figcaption>
+                  <p className='name'>Choco creme</p>
+                  <p className='price'>$700</p>
+                  <button>Place your order</button>
+                </figcaption>
+              </figure>
+              <figure>
+                <img src={cup1} className='product' alt='' />
+                <figcaption>
+                  <p className='name'>Lemon cupcake</p>
+                  <p className='price'>$50</p>
+                  <button>Place your order</button>
+                </figcaption>
+              </figure>
+              <figure>
+                <img src={birthday3} className='product' alt='' />
+                <figcaption>
+                  <p className='name'>Strawberry creme</p>
+                  <p className='price'>$399</p>
+                  <button>Place your order</button>
+                </figcaption>
+              </figure>
+              <figure>
+                <img src={cup3} className='product' alt='' />
+                <figcaption>
+                  <p className='name'>3-layer cupcake</p>
+                  <p className='price'>$90</p>
+                  <button>Place your order</button>
+                </figcaption>
+              </figure>
+              <figure>
+                <img src={other1} className='product' alt='' />
+                <figcaption>
+                  <p className='name'>Chocolate cake</p>
+                  <p className='price'>$1000</p>
+                  <button>Place your order</button>
+                </figcaption>
+              </figure>
+
+              {/* The Modal */}
+              <div id='myModal' className='modal'>
+                {/* The Close Button */}
+                <span className='close'>&times;</span>
+
+                {/* Modal Content (The Image) */}
+                <img className='modal-content' id='img01' alt='' />
+
+                {/* Modal Caption (Image Text) */}
+                <div id='caption'></div>
+              </div>
             </div>
-          </div>
+          </Zoom>
         </div>
       </div>
+
     </div>
   );
 };

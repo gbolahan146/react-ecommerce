@@ -6,6 +6,10 @@ import FormInput from '../../components/formInput/index';
 import Button from '../../components/button';
 import { auth, createUserProfile } from '../../firebase/utils';
 
+//animation
+import Tada from 'react-reveal/Tada';
+
+
 
 class Register extends Component {
   constructor(props) {
@@ -73,28 +77,29 @@ class Register extends Component {
               <Link to='/signin'> Sign in!</Link>
             </span>
           </p>
-
-          <Form onSubmit={this.handleSubmit}>
-            <FormInput
-              type='text'
-              placeholder='First Name'
-              label='First Name'
-              name='firstName'
-              value={firstName}
-              onChange={this.handleChange} />
-            <FormInput type='text' placeholder='Last Name' label='Last Name' value={lastName} onChange={this.handleChange} name='lastName' />
-            <FormInput type='email' placeholder='Email' label='Email' name='email' value={email} onChange={this.handleChange} />
-            <FormInput type='password' placeholder='Password' label='Password' name='password' value={password} onChange={this.handleChange} />
-            <FormInput
-              type='password'
-              placeholder='Confirm Password'
-              label='Confirm Password'
-              name='confirmPassword'
-              value={confirmPassword}
-              onChange={this.handleChange}
-            />
-            <Button type='submit' placeholder='Sign Up' />
-          </Form>
+          <Tada>
+            <Form onSubmit={this.handleSubmit}>
+              <FormInput
+                type='text'
+                placeholder='First Name'
+                label='First Name'
+                name='firstName'
+                value={firstName}
+                onChange={this.handleChange} />
+              <FormInput type='text' placeholder='Last Name' label='Last Name' value={lastName} onChange={this.handleChange} name='lastName' />
+              <FormInput type='email' placeholder='Email' label='Email' name='email' value={email} onChange={this.handleChange} />
+              <FormInput type='password' placeholder='Password' label='Password' name='password' value={password} onChange={this.handleChange} />
+              <FormInput
+                type='password'
+                placeholder='Confirm Password'
+                label='Confirm Password'
+                name='confirmPassword'
+                value={confirmPassword}
+                onChange={this.handleChange}
+              />
+              <Button type='submit' placeholder='Sign Up' />
+            </Form>
+          </Tada>
         </div>
       </div>
     );
