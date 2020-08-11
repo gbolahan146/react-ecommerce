@@ -18,7 +18,7 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 
 //redux
 import { connect } from 'react-redux';
-import { setCurrentUser } from './redux /user/userActions';
+import { setCurrentUser } from './Redux/user/userActions';
 
 
 
