@@ -1,5 +1,5 @@
-@import "../../variables.scss";
-@import "../../index.scss";
+@import '../../variables.scss';
+@import '../../index.scss';
 
 // header section starts here
 .header__base {
@@ -42,7 +42,6 @@ nav ul li a {
   margin-left: 26px;
   padding: 2px;
   position: relative;
-
 
   &:hover {
     border-bottom: 2px solid;

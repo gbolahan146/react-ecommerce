@@ -9,7 +9,7 @@ import g from '../../assets/img/hero/g.png';
 class Login extends Component {
   state = {
     email: '',
-    password: '',
+    password: ''
   };
   handleSubmit = async event => {
     event.preventDefault();
@@ -19,7 +19,7 @@ class Login extends Component {
       alert('signed in succesfully');
       this.setState({
         email: '',
-        password: '',
+        password: ''
       });
     } catch (error) {
       alert(error.message);
@@ -29,7 +29,7 @@ class Login extends Component {
   handleChange = event => {
     const { name, value } = event.target;
     this.setState({
-      [name]: value,
+      [name]: value
     });
   };
   render() {

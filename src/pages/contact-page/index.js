@@ -1,5 +1,5 @@
-import React from "react";
-import banner from "../../assets/img/td.jpg";
+import React from 'react';
+import banner from '../../assets/img/td.jpg';
 
 const ContactPage = () => {
   return (
@@ -7,43 +7,27 @@ const ContactPage = () => {
       <div
         style={{
           height: 250,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundImage: `url(${banner})`,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundImage: `url(${banner})`
         }}
       >
         contact us
       </div>
-      <div style={{ display: "flex" }}>
-        <aside style={{ width: "65%" }}>
+      <div style={{ display: 'flex' }}>
+        <aside style={{ width: '65%' }}>
           <div>
             <h1>Contact Form</h1>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <input
-                style={{ border: "1px solid black" }}
-                type="text"
-                placeholder="Name *"
-              />
-              <input
-                style={{ border: "1px solid black" }}
-                type="text"
-                placeholder="Email *"
-              />
-              <input
-                style={{ border: "1px solid black" }}
-                type="text"
-                placeholder="Subject *"
-              />
-              <textarea
-                style={{ border: "1px solid black" }}
-                rows="15"
-                placeholder="Message *"
-              ></textarea>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <input style={{ border: '1px solid black' }} type='text' placeholder='Name *' />
+              <input style={{ border: '1px solid black' }} type='text' placeholder='Email *' />
+              <input style={{ border: '1px solid black' }} type='text' placeholder='Subject *' />
+              <textarea style={{ border: '1px solid black' }} rows='15' placeholder='Message *'></textarea>
               <button
-                onClick={(event) => {
+                onClick={event => {
                   event.preventDefault();
                 }}
               >
