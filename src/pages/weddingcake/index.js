@@ -17,15 +17,11 @@ import './style.scss';
 
 // import other1 from '../../assets/img/other1.jpg';
 
-import {weddingCakes} from '../../Data'
+import { weddingCakes } from '../../Data';
 const WeddingCakePage = () => {
-  
- 
   return (
     <div className='landing'>
-      <div className='header'>
-       
-      </div>
+      <div className='header'></div>
 
       <div className='landing-body'>
         <div className='call-to-action'>
@@ -34,18 +30,20 @@ const WeddingCakePage = () => {
           </div>
 
           <div className='action call-products'>
-          {weddingCakes.map(cake => (
-    <figure key={cake.id}>
-              <img src={cake.imageUrl} className='product' alt='' />
-              <figcaption>
-                <p className='name'>{cake.name}</p>
-  <p className='price'>{cake.price}</p>
-                <button>Add to cart <i className="fa fa-cart-arrow-down"></i></button>
-              </figcaption>
-            </figure>
-             ))}
+            {weddingCakes.map(cake => (
+              <figure key={cake.id}>
+                <img src={cake.imageUrl} className='product' alt='' />
+                <figcaption>
+                  <p className='name'>{cake.name}</p>
+                  <p className='price'>{cake.price}</p>
+                  <button>
+                    Add to cart <i className='fa fa-cart-arrow-down'></i>
+                  </button>
+                </figcaption>
+              </figure>
+            ))}
 
-          {/* 
+            {/* 
             <figure>
               <img src={birthday2} className='product' alt='' />
               <figcaption>

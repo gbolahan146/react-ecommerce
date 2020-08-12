@@ -9,11 +9,9 @@ import { auth, createUserProfile } from '../../firebase/utils';
 //animation
 import Tada from 'react-reveal/Tada';
 
-
-
 class Register extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       firstName: '',
@@ -21,13 +19,10 @@ class Register extends Component {
       email: '',
       password: '',
       confirmPassword: ''
-    }
-
+    };
   }
 
-
-
-  handleSubmit = async (event) => {
+  handleSubmit = async event => {
     event.preventDefault();
     const { firstName, email, password, confirmPassword } = this.state;
     if (password !== confirmPassword) {
@@ -35,8 +30,7 @@ class Register extends Component {
     } else {
       try {
         const user = await auth.createUserWithEmailAndPassword(email, password);
-        await createUserProfile(user, { firstName })
-
+        await createUserProfile(user, { firstName });
 
         this.setState({
           firstName: '',
@@ -44,12 +38,11 @@ class Register extends Component {
           email: '',
           password: '',
           confirmPassword: ''
-        })
+        });
       } catch (error) {
         alert(error.message);
       }
     }
-
   };
   handleChange = event => {
     const { name, value } = event.target;
@@ -57,7 +50,6 @@ class Register extends Component {
     this.setState({
       [name]: value
     });
-
   };
 
   render() {
@@ -79,13 +71,7 @@ class Register extends Component {
           </p>
           <Tada>
             <Form onSubmit={this.handleSubmit}>
-              <FormInput
-                type='text'
-                placeholder='First Name'
-                label='First Name'
-                name='firstName'
-                value={firstName}
-                onChange={this.handleChange} />
+              <FormInput type='text' placeholder='First Name' label='First Name' name='firstName' value={firstName} onChange={this.handleChange} />
               <FormInput type='text' placeholder='Last Name' label='Last Name' value={lastName} onChange={this.handleChange} name='lastName' />
               <FormInput type='email' placeholder='Email' label='Email' name='email' value={email} onChange={this.handleChange} />
               <FormInput type='password' placeholder='Password' label='Password' name='password' value={password} onChange={this.handleChange} />
@@ -106,4 +92,4 @@ class Register extends Component {
   }
 }
 
-export default Register
+export default Register;
