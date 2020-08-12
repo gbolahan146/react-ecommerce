@@ -1,15 +1,29 @@
 @import '../../variables.scss';
+
 // footer section starts here
 footer {
   background: $bg-primary;
   color: $text-col;
   padding: 10px 0px 50px 0px;
   background-image: linear-gradient(to top, #b3e4f9 30%, #cfebf9 80%, white 100%);
+
+  @media only screen and (max-width: 900px) {
+    font-size: 14px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 12px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    font-size: 8px;
+  }
 }
+
 footer h2 {
   text-align: center;
-  margin-top: 20px;
 }
+
 footer h2:hover {
   color: $pinkish;
   font-weight: lighter;
@@ -17,23 +31,52 @@ footer h2:hover {
   // transition: all 0.9s ease-in;
   transition: all 3s ease;
 }
+
 footer nav {
   display: flex;
+  justify-content: space-around;
 }
+
 footer ul {
   display: flex;
   list-style-type: none;
-  margin-top: 80px;
   flex-grow: 1;
   justify-content: space-evenly;
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 60px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    margin-top: 20px;
+  }
 }
+
 footer a {
   text-decoration: none;
   color: $text-col;
 }
+
 footer li {
   margin-left: 10px;
+
+  @media only screen and (max-width: 500px) {
+    margin-left: 0;
+  }
 }
+
 footer a:hover {
   color: $pinkish;
+}
+
+@media only screen and (max-width: 600px) {
+  footer nav {
+    flex-direction: column;
+  }
+
+  ul {
+    justify-content: space-around;
+    margin-left: 0;
+    padding-left: 0;
+  }
 }

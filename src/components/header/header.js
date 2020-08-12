@@ -1,14 +1,30 @@
 import React from 'react';
 import './style.scss';
-import { Link } from 'react-router-dom';
-import { auth } from '../../firebase/utils';
+
 import { connect } from 'react-redux';
-const Header = ({ currentUser }) => {
+import { auth } from '../../firebase/utils';
+import { Link } from 'react-router-dom';
+
+const Header = ({ currentUser, cartQuantity }) => {
   return (
     <div className='header__base'>
       <header>
         <div className='brand'>
           <Link to='/'>Foldables</Link>
+        </div>
+        <div
+          className='hbg'
+          onClick={e => {
+            console.log(e.target.nextElementSibling);
+            e.target.nextElementSibling.style.visibility === 'hidden'
+              ? (e.target.nextElementSibling.style.visibility = 'visible')
+              : (e.target.nextElementSibling.style.visibility = 'hidden');
+            e.target.nextElementSibling.style.opacity === '0' || 0
+              ? (e.target.nextElementSibling.style.opacity = 1)
+              : (e.target.nextElementSibling.style.opacity = 0);
+          }}
+        >
+          <span></span>
         </div>
         <nav>
           <ul className='nav-list'>
@@ -32,10 +48,11 @@ const Header = ({ currentUser }) => {
                 <Link to='signin'>Sign In</Link>
               </li>
             )}
-            <li className='nav-item'>
+            <li style={{ position: 'relative' }} className='nav-item'>
               <Link to='cart'>
                 Cart <i className='fa fa-cart-arrow-down'></i>
               </Link>
+              <div className='cart-count'>{cartQuantity}</div>
             </li>
           </ul>
         </nav>
@@ -44,7 +61,8 @@ const Header = ({ currentUser }) => {
   );
 };
 
-const mapStateToProps = ({ user }) => ({
-  currentUser: user.currentUser
+const mapStateToProps = ({ user, japacart }) => ({
+  currentUser: user.currentUser,
+  cartQuantity: japacart.cartItems.reduce((acc, arr) => acc + arr.quantity, 0)
 });
 export default connect(mapStateToProps, null)(Header);
