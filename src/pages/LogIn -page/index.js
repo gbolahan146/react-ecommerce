@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import Form from '../../components/form/index';
 import FormInput from '../../components/formInput/index';
 import Button from '../../components/button';
-import { auth } from '../../firebase/utils';
-
+import { auth, signInWithGoogle } from '../../firebase/utils';
+import GoogleButton from 'react-google-button'
 class Login extends Component {
 
   state = {
@@ -59,6 +59,7 @@ class Login extends Component {
               value={email}
               name="email"
               required
+
               onChange={this.handleChange} />
             <FormInput
               type='password'
@@ -66,17 +67,22 @@ class Login extends Component {
               label='Password'
               name="password"
               value={password}
-              onChange={this.handleChange} />
-              <div style={{display: "flex"}}>
-                <Button type='submit' placeholder='Sign In' />
-                <Button google type='submit' placeholder='Sign In With Google' />
-              </div>
+              onChange={this.handleChange}
+              required />
+            <div className="btn-wrapper">
+              <Button type='submit' placeholder='Sign In' />
+              <GoogleButton
+                className="google-btn"
+                type="dark"
+                onClick={signInWithGoogle}
+              />
+            </div>
           </Form>
           <h4 className='cta-text'>
             Don't have an account yet?<Link to='/register'> Sign Up! </Link>
           </h4>
         </div>
-      </div>
+      </div >
     );
   }
 }

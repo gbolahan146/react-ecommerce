@@ -8,7 +8,7 @@
   a,
   a:link,
   a:visited {
-    padding: .2rem;
+    padding: 0.2rem;
     text-decoration: none;
     color: currentColor;
     position: relative;
@@ -23,7 +23,7 @@
       width: 100%;
       background-color: $pinkish;
 
-      transition: all .5s;
+      transition: all 0.5s;
     }
 
     &:hover {
@@ -33,6 +33,29 @@
         height: 100%;
         z-index: -1;
       }
+    }
+  }
+}
+
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .google-btn {
+    margin-top: 32px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 20px;
+    line-height: 14px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 5px;
+
+    &:active {
+      transform: translateY(4px);
     }
   }
 }
