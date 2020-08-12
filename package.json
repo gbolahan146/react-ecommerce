@@ -10,7 +10,6 @@
     "firebase": "^7.17.2",
     "firebase-auth": "^0.1.2",
     "netlify-cli": "^2.59.0",
-    "prettier": "^2.0.5",
     "radium": "^0.26.0",
     "react": "^16.13.1",
     "react-animations": "^1.0.0",
@@ -47,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
   }
 }

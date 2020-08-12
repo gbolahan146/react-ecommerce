@@ -146,7 +146,7 @@
           }
         }
 
-        .flex-details span {
+        .flex-details .span {
           // border: 1px solid red;
           width: 135px;
           text-align: center;
@@ -221,7 +221,7 @@
 
     .checkout-btn {
       background-color: #2d7aee;
-      margin-top: 50px;
+      margin-top: 40px;
       width: 100%;
       border-radius: 0;
       color: white;
@@ -243,7 +243,7 @@
 .mastercard-icon::before,
 .mastercard-icon::after {
   border-radius: 0.5em;
-  content: "";
+  content: '';
   display: inline-block;
   height: 1em;
   position: absolute;
@@ -263,10 +263,8 @@
   top: 0;
 }
 
-
 @media only screen and (max-width: 500px) {
   .container {
-
     .wrapper {
       flex-direction: column;
       align-content: center;
@@ -276,7 +274,7 @@
       .main-cart {
         min-width: 97.5%;
         // padding: 0;
-    
+
         .cart-item {
           font-size: 15px;
 
@@ -294,15 +292,12 @@
         margin-top: 10px;
         margin-left: 10px;
 
-
         .content {
-
-          .mastercard{
+          .mastercard {
             padding-right: 0;
           }
-          .card-design{
+          .card-design {
             width: 100%;
-
 
             .smart-card {
               width: 250px;
@@ -317,7 +312,6 @@
 
 @media only screen and (max-width: 1000px) {
   .container {
-
     .wrapper {
       flex-direction: column;
       align-content: center;
@@ -326,7 +320,7 @@
 
       .main-cart {
         min-width: 97.5%;
-    
+
         .cart-item {
           font-size: 15px;
 
@@ -344,15 +338,11 @@
         margin-top: 10px;
         margin-left: 10px;
 
-
-
-
         .content {
-
-          .mastercard{
+          .mastercard {
             padding-right: 0;
           }
-          .card-design{
+          .card-design {
             width: 100%;
           }
         }

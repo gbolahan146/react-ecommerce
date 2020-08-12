@@ -1,4 +1,4 @@
-@import "../../variables.scss";
+@import '../../variables.scss';
 
 .Register {
   width: 100%;
@@ -7,12 +7,13 @@
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 0.5rem; // 1rem == 16px(default html font size if not manually changed)
 
-  background: linear-gradient(rgba(#000, 0.25), rgba(#000, 0.2)),
-    url("../../assets/img/cakes/cup/cup3.jpg") center no-repeat;
+  background: linear-gradient(rgba(#000, 0.25), rgba(#000, 0.2)), url('../../assets/img/cakes/cup/cup3.jpg') center no-repeat;
   background-size: cover;
   background-position: top;
 
   color: rgba(#fff, 1);
+
+  padding-top: 100px;
 
   &-image {
     grid-column: 1/2;
@@ -52,15 +53,20 @@
 
         &::after {
           display: block;
-          content: "";
+          content: '';
           position: absolute;
           bottom: 0;
           left: 0;
           height: 2px;
           width: 100%;
           background-color: $pinkish;
+          border-radius: 3px;
 
           transition: all 0.5s;
+        }
+
+        &:focus {
+          outline: none;
         }
 
         &:hover {

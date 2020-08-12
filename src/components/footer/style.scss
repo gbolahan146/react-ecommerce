@@ -1,15 +1,10 @@
-@import "../../variables.scss";
+@import '../../variables.scss';
 // footer section starts here
 footer {
   background: $bg-primary;
   color: $text-col;
-  background-image: linear-gradient(
-    to top,
-    #b3e4f9 30%,
-    #cfebf9 80%,
-    white 100%
-  );
-  width: auto;
+  padding: 10px 0px 50px 0px;
+  background-image: linear-gradient(to top, #b3e4f9 30%, #cfebf9 80%, white 100%);
 }
 footer h2 {
   text-align: center;
@@ -24,7 +19,6 @@ footer h2:hover {
 footer nav {
   display: flex;
   justify-content: space-around;
-
 }
 footer ul {
   display: flex;
