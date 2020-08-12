@@ -8,17 +8,17 @@ const LandingPage = props => {
 
   return (
     <div className='landing'>
-      <div className='header'>
+      <div className='header-landing'>
         <h2 className='header-text'>Find out the sweet story behind our Mastery.</h2>
-        <p className='header-subtext'>
-          Everything we offer is made right here, from cookies to pasteries to cakes. Name them, we've got you covered.
-        </p>
+        <p className='header-subtext'>From cookies to pasteries to cakes. Name them, we've got you covered.</p>
       </div>
 
       <div className='landing-body'>
         <div className='call-to-action'>
-          <div style={{ textAlign: 'center', marginBottom: 30 }}>
-            <span style={{ display: 'inline-block', marginBottom: 30 }}>CHOOSE A CATEGORY</span>
+          <div className='cta-div1'>
+            <span className='cta-span1' style={{}}>
+              CHOOSE A CATEGORY
+            </span>
             <div className='call-buttons'>
               <button onClick={() => history.push('/weddingcakepage')}>Wedding</button>
               <button onClick={() => history.push('/birthdaycake')}>Birthday</button>

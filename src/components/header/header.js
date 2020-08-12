@@ -1,14 +1,30 @@
 import React from 'react';
 import './style.scss';
-import { Link } from 'react-router-dom';
-import { auth } from '../../firebase/utils';
+
 import { connect } from 'react-redux';
+import { auth } from '../../firebase/utils';
+import { Link } from 'react-router-dom';
+
 const Header = ({ currentUser, cartQuantity }) => {
   return (
     <div className='header__base'>
       <header>
         <div className='brand'>
           <Link to='/'>Foldables</Link>
+        </div>
+        <div
+          className='hbg'
+          onClick={e => {
+            console.log(e.target.nextElementSibling);
+            e.target.nextElementSibling.style.visibility === 'hidden'
+              ? (e.target.nextElementSibling.style.visibility = 'visible')
+              : (e.target.nextElementSibling.style.visibility = 'hidden');
+            e.target.nextElementSibling.style.opacity === '0' || 0
+              ? (e.target.nextElementSibling.style.opacity = 1)
+              : (e.target.nextElementSibling.style.opacity = 0);
+          }}
+        >
+          <span></span>
         </div>
         <nav>
           <ul className='nav-list'>
