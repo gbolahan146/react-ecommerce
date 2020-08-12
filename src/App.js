@@ -65,7 +65,7 @@ class App extends Component {
             path="/register"
             render={() => (currentUser ? <Redirect to="/" /> : <Register />)}
           />
-          <Route exact path="/aboutus" component={AboutUsPage} />
+          <Route exact path="/about" component={AboutUsPage} />
           <Route exact path="/contact" component={ContactPage} />
           <Route exact path="/birthdaycake" component={BirthdayCakePage} />
           <Route exact path="/weddingcakepage" component={WeddingCakePage} />

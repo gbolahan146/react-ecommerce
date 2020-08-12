@@ -1,4 +1,5 @@
 @import "../../variables.scss";
+@import "../../index.scss";
 
 // header section starts here
 .header__base {
@@ -42,26 +43,11 @@ nav ul li a {
   padding: 2px;
   position: relative;
 
-  &::after {
-    display: block;
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    border-radius: 3px;
-    background-color: #000;
-    transition: all 0.5s ease;
-  }
 
   &:hover {
-    color: #fff;
-
-    &::after {
-      height: 100%;
-      z-index: -1;
-    }
+    border-bottom: 2px solid;
+    transition: all 0.5s ease;
+    color: $pinkish;
   }
 
   &:focus {
@@ -80,7 +66,7 @@ nav ul li a {
   margin-left: 20px;
 
   &:hover {
-    text-decoration: underline;
+    border-bottom: 2px solid;
     transition: all 0.5s ease;
     color: $pinkish;
   }

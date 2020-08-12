@@ -13,13 +13,13 @@ const Header = ({ currentUser }) => {
         <nav>
           <ul className='nav-list'>
             <li className='nav-item'>
-              <Link to='/aboutus'>About Us</Link>
+              <Link to='/about'>About Us</Link>
             </li>
             <li className='nav-item'>
-              <Link to='contact'>Contact</Link>
+              <Link to='/contact'>Contact</Link>
             </li>
             <li className='nav-item'>
-              <Link to='products'>Products</Link>
+              <Link to='/products'>Products</Link>
             </li>
             {currentUser ? (
               <li className='nav-item'>
