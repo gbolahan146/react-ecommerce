@@ -3,13 +3,8 @@ import './style.scss';
 import { landingPageCakes } from '../../Data';
 import MenuItem from '../../components/MenuItem/MenuItem';
 
-<<<<<<< HEAD
-const LandingPage = (props) => {
-  const { history } = props
-=======
 const LandingPage = props => {
-  const { history, match } = props;
->>>>>>> 9c08a0b35d97dd01c98ca67071b819d87adcbaa2
+  const { history } = props;
 
   return (
     <div className='landing'>
