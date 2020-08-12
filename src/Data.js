@@ -181,6 +181,8 @@ export const others = [
   },
   {
     id: 304,
-    imageUrl: 'https://i.ibb.co/g3f1HbP/other4.jpg'
+    imageUrl: 'https://i.ibb.co/g3f1HbP/other4.jpg',
+    name: 'Big Raisins Cake',
+    price: '$2020'
   }
 ];

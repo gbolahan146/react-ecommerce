@@ -1,3 +1,6 @@
+@import '../../variables.scss';
+@import '../../index.scss';
+
 .container {
   background-color: #e5e6ea;
   border-radius: 5px;
@@ -50,6 +53,11 @@
 
         .mod-item {
           cursor: pointer;
+
+          &:hover {
+            transition: all 0.5s ease;
+            color: $pinkish;
+          }
         }
 
         .cancel {
