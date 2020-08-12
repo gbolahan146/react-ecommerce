@@ -13,6 +13,8 @@
 
 header {
   display: flex;
+  position: fixed;
+  z-index: 0;
   justify-content: space-around;
   align-items: center;
   height: 50px;

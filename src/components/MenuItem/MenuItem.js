@@ -11,7 +11,9 @@ const MenuItem = ({ item, addItemToCart }) => {
       <figcaption>
         <p className='name'>{name}</p>
         <p className='price'>{price}</p>
-        <button onClick={() => addItemToCart(item)}>Add to cart</button>
+        <button onClick={() => addItemToCart(item)}>
+          Add to cart <i className='fa fa-cart-arrow-down'></i>
+        </button>
       </figcaption>
     </figure>
   );
