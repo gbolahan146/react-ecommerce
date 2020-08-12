@@ -1,4 +1,12 @@
 @import "../../variables.scss";
+@import "../../index.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
+
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
 
 .landing-body {
   width: 100%;
