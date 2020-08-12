@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
     // border: 2px solid blue;
-    max-width: 90%;
+    max-width: 95%;
     height: 700px;
     margin: 0 auto;
 
@@ -19,6 +19,7 @@
       width: 65%;
       height: 85%;
       padding: 5%;
+      flex-shrink: 2;
       // border: 2px solid black;
 
       .shop-text {
@@ -113,10 +114,10 @@
           // justify-content: space-between;
 
           .smart-card {
-            width: 380px;
-            height: 188px;
+            width: 95%;
+            height: 180px;
             position: absolute;
-            right: 30%;
+            right: 35%;
             background: #8d8f97;
             border-radius: 5px;
 
@@ -139,7 +140,7 @@
 
               & input::placeholder {
                 color: #ffff;
-                font-size: 16px;
+                font-size: 12px;
               }
             }
           }
@@ -159,7 +160,6 @@
           display: flex;
           flex-direction: column;
           align-items: flex-end;
-          padding-right: 15px;
         }
 
         .credit-card {
@@ -221,7 +221,7 @@
 
     .checkout-btn {
       background-color: #2d7aee;
-      margin-top: 50px;
+      margin-top: 40px;
       width: 100%;
       border-radius: 0;
       color: white;
@@ -261,4 +261,95 @@
   mix-blend-mode: hard-light;
   right: 0;
   top: 0;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    .wrapper {
+      flex-direction: column;
+      align-content: center;
+      height: auto;
+      padding-bottom: 10px;
+
+      .main-cart {
+        min-width: 97.5%;
+        // padding: 0;
+
+        .cart-item {
+          font-size: 15px;
+
+          .for-picture {
+            height: 80px;
+            width: 80px;
+          }
+        }
+      }
+
+      .checkout {
+        min-width: 350px;
+        padding-bottom: 10px;
+        margin-right: 0;
+        margin-top: 10px;
+        margin-left: 10px;
+
+        .content {
+          .mastercard {
+            padding-right: 0;
+          }
+          .card-design {
+            width: 100%;
+
+            .smart-card {
+              width: 250px;
+              right: 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    .wrapper {
+      flex-direction: column;
+      align-content: center;
+      height: auto;
+      padding-bottom: 10px;
+
+      .main-cart {
+        min-width: 97.5%;
+
+        .cart-item {
+          font-size: 15px;
+
+          .for-picture {
+            height: 80px;
+            width: 80px;
+          }
+        }
+      }
+
+      .checkout {
+        min-width: 350px;
+        padding-bottom: 10px;
+        margin-right: 0;
+        margin-top: 10px;
+        margin-left: 10px;
+
+        .content {
+          .mastercard {
+            padding-right: 0;
+          }
+          .card-design {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  // .container .wrapper .checkout .content .card-design .smart-card {
+  //   width: 300px;
+  // }
 }
