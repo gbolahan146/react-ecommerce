@@ -62,3 +62,58 @@ nav ul li a {
     color: $pinkish;
   }
 }
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}    
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .navlinks .display {display: none;}
+
+  .menu {
+    display: block;
+
+  }
+
+  .navlinks.responsive {position: relative;}
+
+  .navlinks.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .logo{
+      width: 100%;
+      margin: 0 15px;
+  }
+  header nav{
+      flex-direction: column;
+  }
+  
+  header ul{
+      flex-direction: column;
+      padding-left: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+
+  }    
+}
+
+.cart-count {
+  height: 20px;
+  width: 20px;
+  background: $pinkish;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  left: 70px;
+}

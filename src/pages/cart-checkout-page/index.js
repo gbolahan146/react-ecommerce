@@ -51,6 +51,7 @@ const CartCheckoutPage = (props) => {
                   <div className="card-details">
                     <span style={{ fontSize: 24 }}>VISA</span>
                     <input
+                      style={{ fontSize: 12, width: "auto" }}
                       placeholder="**** **** **** ****"
                       value={cardNumber}
                     />
@@ -62,10 +63,11 @@ const CartCheckoutPage = (props) => {
                       className="flex-details"
                     >
                       <input
+                        style={{ fontSize: 12 }}
                         placeholder="CIROMA ADEKUNLE CHUKWUMA"
                         value={cardName}
                       />
-                      <span>{`${expiryMonth} / ${expiryYear}`}</span>
+                      <span style={{ fontSize: 12 }}>{`${expiryMonth} / ${expiryYear}`}</span>
                     </div>
                   </div>
                 </div>
