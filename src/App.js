@@ -9,6 +9,10 @@ import ContactPage from './pages/contact-page/index'
 import CartCheckoutPage from './pages/cart-checkout-page';
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
+import BirthdayCakePage from './pages/birthdaycake-page';
+import WeddingCakePage from './pages/weddingcake';
+import OtherCakePage from './pages/othercake';
+import CupCakePage from './pages/cupcakepage';
 
 //firebase
 import { auth, createUserProfile } from './firebase/utils'
@@ -66,6 +70,10 @@ class App extends Component {
           />
           <Route exact path="/aboutus" component={AboutUsPage} />
           <Route exact path="/contact" component={ContactPage} />
+          <Route exact path="/birthdaycake" component={BirthdayCakePage} />
+          <Route exact path="/weddingcakepage" component={WeddingCakePage} />
+          <Route exact path="/chocolate" component={OtherCakePage} />
+          <Route exact path="/cupcakepage" component={CupCakePage} />
           <Route exact path="/cart" component={CartCheckoutPage} />
 
         </Switch>

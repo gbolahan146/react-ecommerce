@@ -26,10 +26,10 @@ const LandingPage = (props) => {
           <div style={{ textAlign: "center", marginBottom: 30 }}>
             CHOOSE A CATEGORY
             <div className='call-buttons'>
-              <button onClick={() => history.push(`${match.url}wedding`)}>Wedding</button>
-              <button onClick={() => history.push(`${match.url}birthday`)}>Birthday</button>
-              <button onClick={() => history.push(`${match.url}cupcake`)}>Cup cake</button>
-              <button onClick={() => history.push(`${match.url}chocolate`)}>Chocolate</button>
+              <button onClick={() => history.push('/weddingcakepage')}>Wedding</button>
+              <button onClick={() => history.push('/birthdaycake')}>Birthday</button>
+              <button onClick={() => history.push(`/cupcakepage`)}>Cup cake</button>
+              <button onClick={() => history.push(`/chocolate`)}>Chocolate</button>
             </div>
           </div>
 
