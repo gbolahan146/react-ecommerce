@@ -49,7 +49,6 @@ const CartCheckoutPage = props => {
                 <div className='smart-card'>
                   <div className='card-details'>
                     <span style={{ fontSize: 24 }}>VISA</span>
-                    <input placeholder='**** **** **** ****' value={cardNumber} />
                     <input style={{ fontSize: 12, width: 'auto' }} placeholder='**** **** **** ****' value={cardNumber} />
                     <div
                       style={{
@@ -58,8 +57,6 @@ const CartCheckoutPage = props => {
                       }}
                       className='flex-details'
                     >
-                      <input placeholder='CIROMA ADEKUNLE CHUKWUMA' value={cardName} />
-                      <span>{`${expiryMonth} / ${expiryYear}`}</span>
                       <input style={{ fontSize: 12 }} placeholder='CIROMA ADEKUNLE CHUKWUMA' value={cardName} />
                       <span
                         style={{ width: 70, fontSize: 12, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
