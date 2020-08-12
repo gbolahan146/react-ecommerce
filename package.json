@@ -9,6 +9,7 @@
     "dotenv": "^8.2.0",
     "firebase": "^7.17.2",
     "firebase-auth": "^0.1.2",
+    "netlify-cli": "^2.59.0",
     "radium": "^0.26.0",
     "react": "^16.13.1",
     "react-animations": "^1.0.0",
