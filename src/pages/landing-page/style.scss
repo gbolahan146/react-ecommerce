@@ -1,11 +1,10 @@
-@import "../../variables.scss";
-@import "../../index.scss";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
-
+@import '../../variables.scss';
+@import '../../index.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
 
 * {
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .landing-body {
@@ -178,11 +177,9 @@ img.product {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.5)),
-    url(../../assets/img/hero/hero4.jpg);
+  background-image: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.5)), url(../../assets/img/hero/hero4.jpg);
   background-position: center;
   background-size: cover;
 
   // clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-
 }

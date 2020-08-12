@@ -1,4 +1,4 @@
-@import "../../variables.scss";
+@import '../../variables.scss';
 
 .btn {
   display: block;
@@ -11,7 +11,7 @@
   font-size: 15px;
   font-weight: 550;
   border-radius: 5px;
-  border: .5px solid $pinkish;
+  border: 0.5px solid $pinkish;
   cursor: pointer;
   text-transform: capitalize;
   transition: all 0.3s;
@@ -27,7 +27,7 @@
 }
 
 .google {
-  border: .5px solid #4285f4;
+  border: 0.5px solid #4285f4;
   display: flex;
   align-items: center;
   justify-content: space-between;

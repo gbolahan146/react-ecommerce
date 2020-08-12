@@ -1,9 +1,9 @@
-import React from "react";
-import "./style.scss";
+import React from 'react';
+import './style.scss';
 
-const Form = (props) => (
+const Form = props => (
   <div>
-    <form onSubmit={props.onSubmit} className="form">
+    <form onSubmit={props.onSubmit} className='form'>
       {props.children}
     </form>
   </div>
