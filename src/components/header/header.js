@@ -28,11 +28,9 @@ const Header = ({ currentUser, cartQuantity }) => {
         <nav>
           <ul className='nav-list'>
             <li className='nav-item'>
-              <Link to='/about'>About Us</Link>
+              <Link to='/'>Home</Link>
             </li>
-            <li className='nav-item'>
-              <Link to='/contact'>Contact</Link>
-            </li>
+            
             <li className='nav-item'>
               <Link to='/products'>Products</Link>
             </li>

@@ -19,9 +19,6 @@ const ProductPage = () => {
         <div className="product_page">
             <header></header>
 
-
-            
-
             <div className="banner">
                 <img src="" alt="" />
 
@@ -43,7 +40,7 @@ const ProductPage = () => {
                             </div>
                             <div className="card-body">
                                 <h1 className="card-title">cake 1</h1>
-                                <button href="#" class="btn btn-danger">Add to the card</button>
+                                <button href="#" class="btn btn-danger">Add to Cart</button>
                             </div>
                         </div>
 
@@ -55,7 +52,7 @@ const ProductPage = () => {
                             </div>
                             <div className="card-body">
                                 <h1 className="card-title">cake 2</h1>
-                                <button href="#" className="btn btn-danger">Add to the card</button>
+                                <button href="#" className="btn btn-danger">Add to Cart</button>
                             </div>
                         </div>
 
@@ -68,7 +65,7 @@ const ProductPage = () => {
                             </div>
                             <div className="card-body">
                                 <h1 className="card-title">cake 3</h1>
-                                <button href="#" className="btn btn-danger">Add to the card</button>
+                                <button href="#" className="btn btn-danger">Add to Cart</button>
                             </div>
                         </div>
 
@@ -81,7 +78,7 @@ const ProductPage = () => {
                             </div>
                             <div className="card-body">
                                 <h1 className="card-title">cake 4</h1>
-                                <button href="#" className="btn btn-danger">Add to the card</button>
+                                <button href="#" className="btn btn-danger">Add to Cart</button>
                             </div>
                         </div>
 
@@ -94,7 +91,7 @@ const ProductPage = () => {
                             </div>
                             <div className="card-body">
                                 <h1 className="card-title">cake 5</h1>
-                                <button href="#" className="btn btn-danger">Add to the card</button>
+                                <button href="#" className="btn btn-danger">Add to Cart</button>
                             </div>
                         </div>
 
@@ -107,7 +104,7 @@ const ProductPage = () => {
                             </div>
                             <div className="card-body">
                                 <h1 className="card-title">cake 6</h1>
-                                <button href="#" className="btn btn-danger">Add to the card</button>
+                                <button href="#" className="btn btn-danger">Add to Cart</button>
                             </div>
                         </div>
 
@@ -127,7 +124,7 @@ const ProductPage = () => {
                                 </div>
                                 <div className="card-body">
                                     <h1 className="card-title">cake 1</h1>
-                                    <button href="#" class="btn btn-danger">Add to the card</button>
+                                    <button href="#" class="btn btn-danger">Add to Cart</button>
                                 </div>
                             </div>
 
@@ -139,7 +136,7 @@ const ProductPage = () => {
                                 </div>
                                 <div className="card-body">
                                     <h1 className="card-title">Cup cake</h1>
-                                    <button href="#" className="btn btn-danger">Add to the card</button>
+                                    <button href="#" className="btn btn-danger">Add to Cart</button>
                                 </div>
                             </div>
 
@@ -152,7 +149,7 @@ const ProductPage = () => {
                                 </div>
                                 <div className="card-body">
                                     <h1 className="card-title">Cup cake</h1>
-                                    <button href="#" className="btn btn-danger">Add to the card</button>
+                                    <button href="#" className="btn btn-danger">Add to Cart</button>
                                 </div>
                             </div>
 
@@ -165,7 +162,7 @@ const ProductPage = () => {
                                 </div>
                                 <div className="card-body">
                                     <h1 className="card-title">Cup cake</h1>
-                                    <button href="#" className="btn btn-danger">Add to the card</button>
+                                    <button href="#" className="btn btn-danger">Add to Cart</button>
                                 </div>
                             </div>
 
@@ -178,7 +175,7 @@ const ProductPage = () => {
                                 </div>
                                 <div className="card-body">
                                     <h1 className="card-title">Cup cake</h1>
-                                    <button href="#" className="btn btn-danger">Add to the card</button>
+                                    <button href="#" className="btn btn-danger">Add to Cart</button>
                                 </div>
                             </div>
 
@@ -191,7 +188,7 @@ const ProductPage = () => {
                                 </div>
                                 <div className="card-body">
                                     <h1 className="card-title">Cup cake</h1>
-                                    <button href="#" className="btn btn-danger">Add to the card</button>
+                                    <button href="#" className="btn btn-danger">Add to Cart</button>
                                 </div>
                             </div>
 
@@ -213,7 +210,7 @@ const ProductPage = () => {
                                 </div>
                                 <div className="card-body">
                                     <h1 className="card-title">cake 1</h1>
-                                    <button href="#" class="btn btn-danger">Add to the card</button>
+                                    <button href="#" class="btn btn-danger">Add to Cart</button>
                                 </div>
                         </div>
                     
@@ -225,7 +222,7 @@ const ProductPage = () => {
                                 </div>
                                 <div className="card-body">
                                     <h1 className="card-title">cake 2</h1>
-                                    <button href="#" className="btn btn-danger">Add to the card</button>
+                                    <button href="#" className="btn btn-danger">Add to Cart</button>
                                 </div>
                         </div>
                         
@@ -238,7 +235,7 @@ const ProductPage = () => {
                                 </div>
                                 <div className="card-body">
                                     <h1 className="card-title">cake 3</h1>
-                                    <button href="#" className="btn btn-danger">Add to the card</button>
+                                    <button href="#" className="btn btn-danger">Add to Cart</button>
                                 </div>
                         </div>
                         
@@ -251,7 +248,7 @@ const ProductPage = () => {
                                 </div>
                                 <div className="card-body">
                                     <h1 className="card-title">cake 4</h1>
-                                    <button href="#" className="btn btn-danger">Add to the card</button>
+                                    <button href="#" className="btn btn-danger">Add to Cart</button>
                                 </div>
                         </div>
                         
@@ -264,7 +261,7 @@ const ProductPage = () => {
                                 </div>
                                 <div className="card-body">
                                     <h1 className="card-title">cake 5</h1>
-                                    <button href="#" className="btn btn-danger">Add to the card</button>
+                                    <button href="#" className="btn btn-danger">Add to Cart</button>
                                 </div>
                         </div>
                         
@@ -277,7 +274,7 @@ const ProductPage = () => {
                                 </div>
                                 <div className="card-body">
                                     <h1 className="card-title">cake 6</h1>
-                                    <button href="#" className="btn btn-danger">Add to the card</button>
+                                    <button href="#" className="btn btn-danger">Add to Cart</button>
                                 </div>
                         </div>
                         
@@ -285,18 +282,7 @@ const ProductPage = () => {
                         </div>
                         
             </div>
-            
-
-                <div className="cupcakes">
-                    
-                
-                </div>
-                
-
-                <div></div>
-            </div>
-
-        </div>
+        
     )
 }
 
